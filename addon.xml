@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.xonfluence"
-  version="4.1.5"
+  version="5.3.1"
   name="Xonfluence"
-  provider-name="Helly,bsoriano">
+  provider-name="Helly, bsoriano, jdig4240, rafikW">
   <requires>
-    <import addon="xbmc.gui" version="5.15.0"/>
+    <import addon="xbmc.gui" version="5.17.0"/>
+  <import addon="script.favourites" version="8.1.2"/>
+    <import addon="script.image.resource.select" version="3.0.2"/>    
   </requires>
-  <extension
-    point="xbmc.gui.skin"
-    debugging="false"
-    effectslowdown="1.0">
+  <extension point="xbmc.gui.skin" debugging="false" effectslowdown="1.0" >
     <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
   </extension>
   <extension point="xbmc.addon.metadata">
@@ -24,23 +23,23 @@
     <disclaimer lang="en_US">You break it - You get to keep the pieces</disclaimer>
     <disclaimer lang="nl">Wie zijn billen brandt - moet op de blaren zitten</disclaimer>
     <platform>all</platform>
-	  <license>GNU General Public License version 2</license>
-	  <forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
-	  <website></website>
-	  <email></email>
-	  <source>https://github.com/bartolomesoriano/skin.xonfluence</source>
+      <license>GNU General Public License version 2</license>
+      <forum>https://forum.kodi.tv/showthread.php?tid=346302</forum>
+      <website></website>
+      <email></email>
+      <source>https://github.com/bartolomesoriano/skin.xonfluence</source>
     <assets>
       <icon>resources/icon.png</icon>
       <fanart>resources/fanart.jpg</fanart>
-	    <screenshot>resources/screenshot-01.jpg</screenshot>
-	    <screenshot>resources/screenshot-02.jpg</screenshot>
-	    <screenshot>resources/screenshot-03.jpg</screenshot>
-	    <screenshot>resources/screenshot-04.jpg</screenshot>
-	    <screenshot>resources/screenshot-05.jpg</screenshot>
-	    <screenshot>resources/screenshot-06.jpg</screenshot>
-	    <screenshot>resources/screenshot-07.jpg</screenshot>
-	    <screenshot>resources/screenshot-08.jpg</screenshot>
-	    <screenshot>resources/screenshot-09.jpg</screenshot>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/screenshot-02.jpg</screenshot>
+        <screenshot>resources/screenshot-03.jpg</screenshot>
+        <screenshot>resources/screenshot-04.jpg</screenshot>
+        <screenshot>resources/screenshot-05.jpg</screenshot>
+        <screenshot>resources/screenshot-06.jpg</screenshot>
+        <screenshot>resources/screenshot-07.jpg</screenshot>
+        <screenshot>resources/screenshot-08.jpg</screenshot>
+        <screenshot>resources/screenshot-09.jpg</screenshot>
     </assets>
     <news>See changelog for latest changes</news>
   </extension>
