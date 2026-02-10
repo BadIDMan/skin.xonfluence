@@ -1,3 +1,14 @@
+[B]5.3.1[/B]
+- Fix skin string IDs to comply with Kodi 22 (31000–31999) and resolve missing labels (this fixes multiple missing/blank labels in the skin settings)
+- Set Media Info 2 as default view for Movies and TV Shows
+- Replace "Aired" with new "Premiered" label in TV Shows views
+- Add Rating label to selected TV Shows views
+- Add Rating label to Media Info 2 view for Movies
+- Fix missing name for Low View
+- Add missing video and audio codec flags
+- Add File and Internet Information section to DialogPlayerProcessInfo.xml
+- Remove UI clutter introduced in Media Info 2 view (ratings, votes, added date)
+
 [B]4.1.5[/B] 
 - More items for small poster widgets
 - Fix next aired widget information
