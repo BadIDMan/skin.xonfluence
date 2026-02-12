@@ -1,7 +1,8 @@
 skin.xonfluence
 
-Adapted to run on Kodi 22.
+Adapted to run on Kodi 22. Therfore version is bumped from 5.x to 6.x 
 
 See:
 https://forum.kodi.tv/showthread.php?tid=372668&page=13
+
 
