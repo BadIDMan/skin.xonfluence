@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.xonfluence"
-  version="5.3.1"
+  version="6.0.1"
   name="Xonfluence"
   provider-name="Helly, bsoriano, jdig4240, rafikW">
   <requires>
@@ -44,3 +44,4 @@
     <news>See changelog for latest changes</news>
   </extension>
 </addon>
+
