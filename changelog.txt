@@ -1,4 +1,4 @@
-[B]5.3.1[/B]
+[B]6.0.1[/B]
 - Fix skin string IDs to comply with Kodi 22 (31000–31999) and resolve missing labels (this fixes multiple missing/blank labels in the skin settings)
 - Set Media Info 2 as default view for Movies and TV Shows
 - Replace "Aired" with new "Premiered" label in TV Shows views
@@ -61,3 +61,4 @@
 - Made optional the use of script.favourites and service.library.data.provider
 - Fixed show info on start for live streams (GitHub #52)
 - Added options to show larger seekbar on intro and when seeking
+
