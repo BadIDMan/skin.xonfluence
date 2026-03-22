@@ -237,12 +237,13 @@
                         <control type="label">
                             <description>Rating txt</description>
                             <left>1260</left>
-                            <top>930</top>
+                            <top>935</top>
                             <width>180</width>
-                            <height>45</height>
+                            <height>40</height>
                             <label>$LOCALIZE[563]:</label>
                             <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
-                            <font>font12</font>
+                            <visible>!String.IsEmpty(ListItem.Rating)</visible>
+                            <font>font10</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
@@ -251,45 +252,65 @@
                         </control>
                         <control type="label">
                             <description>Rating Value</description>
-                            <left>1348</left>
+                            <left>1335</left>
                             <top>930</top>
-                            <width>60</width>
+                            <width>50</width>
                             <height>45</height>
                             <label fallback="32016">$INFO[listitem.Rating]</label>
                             <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
+                            <visible>!String.IsEmpty(ListItem.Rating)</visible>
                             <font>font12</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
                             <align>left</align>
                             <aligny>top</aligny>
-                            <visible>String.IsEqual(Skin.Font,Massive)</visible>
+                        </control>
+
+                        <control type="label">
+                            <description>Votes txt</description>
+                            <left>1388</left>
+                            <top>935</top>
+                            <width>80</width>
+                            <height>40</height>
+                            <label>$LOCALIZE[205]:</label>
+                            <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
+                            <visible>!String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
+                            <font>font10</font>
+                            <textcolor>$VAR[MainColorOne]</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                            <aligny>top</aligny>
                         </control>
                         <control type="label">
-                            <description>Rating Value</description>
-                            <left>1348</left>
+                            <description>Votes Value</description>
+                            <left>1453</left>
                             <top>930</top>
-                            <width>60</width>
+                            <width>120</width>
                             <height>45</height>
-                            <label fallback="32016">$INFO[listitem.Rating]</label>
+                            <label fallback="32016">$INFO[listitem.Votes]</label>
                             <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
+                            <visible>!String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
                             <font>font12</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
                             <align>left</align>
                             <aligny>top</aligny>
-                            <visible>!String.IsEqual(Skin.Font,Massive)</visible>
                         </control>
+
+
                         <control type="label">
                             <description>Year txt</description>
-                            <left>1420</left>
-                            <top>930</top>
+                            <left>1575</left>
+                            <top>935</top>
                             <width>250</width>
-                            <height>45</height>
+                            <height>40</height>
                             <label>$LOCALIZE[345]:</label>
                             <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) </visible>
-                            <font>font12</font>
+                            <visible>!String.IsEmpty(ListItem.Year)</visible>
+                            <font>font10</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
@@ -298,46 +319,30 @@
                         </control>
                         <control type="label">
                             <description>Year Value</description>
-                            <left>1487</left>
+                            <left>1628</left>
                             <top>930</top>
                             <width>350</width>
                             <height>45</height>
                             <label fallback="32016">$INFO[listitem.Year]</label>
                             <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) </visible>
+                            <visible>!String.IsEmpty(ListItem.Year)</visible>
                             <font>font12</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
                             <align>left</align>
                             <aligny>top</aligny>
-                            <visible>String.IsEqual(Skin.Font,Massive)</visible>
-                        </control>
-                        <control type="label">
-                            <description>Year Value</description>
-                            <left>1487</left>
-                            <top>930</top>
-                            <width>350</width>
-                            <height>45</height>
-                            <label fallback="32016">$INFO[listitem.Year]</label>
-                            <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) </visible>
-                            <font>font12</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <scroll>false</scroll>
-                            <align>left</align>
-                            <aligny>top</aligny>
-                            <visible>!String.IsEqual(Skin.Font,Massive)</visible>
                         </control>
                         <control type="label">
                             <description>Duration (Runtime) txt</description>
-                            <left>1285</left>
-                            <top>930</top>
+                            <left>1385</left>
+                            <top>935</top>
                             <width>400</width>
-                            <height>45</height>
+                            <height>40</height>
                             <label>$LOCALIZE[2050]:</label>
                             <visible>!String.IsEmpty(ListItem.Duration)</visible>
                             <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) </visible>
-                            <font>font12</font>
+                            <font>font10</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
@@ -346,9 +351,9 @@
                         </control>
                         <control type="label">
                             <description>Duration Value</description>
-                            <left>1695</left>
+                            <left>1792</left>
                             <top>930</top>
-                            <width>400</width>
+                            <width>120</width>
                             <height>45</height>
                             <label fallback="32016">$INFO[listitem.Duration]</label>
                             <visible>!String.IsEmpty(ListItem.Duration)</visible>
@@ -359,27 +364,9 @@
                             <scroll>false</scroll>
                             <align>left</align>
                             <aligny>top</aligny>
-                            <visible>String.IsEqual(Skin.Font,Massive)</visible>
-                        </control>
-                        <control type="label">
-                             <description>Duration Value</description>
-                            <left>1695</left>
-                            <top>930</top>
-                            <width>400</width>
-                            <height>45</height>
-                            <label fallback="32016">$INFO[listitem.Duration]</label>
-                            <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo) </visible>
-                            <visible>!String.IsEmpty(ListItem.Duration)</visible>
-                            <font>font12</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <scroll>false</scroll>
-                            <align>left</align>
-                            <aligny>top</aligny>
-                            <visible>!String.IsEqual(Skin.Font,Massive)</visible>
                         </control>
 
-                        <!-- For TV Serie: -->
+                        <!-- For TV Show: -->
                         <control type="label">
                             <description>Rating txt</description>
                             <left>1260</left>
@@ -388,6 +375,7 @@
                             <height>45</height>
                             <label>$LOCALIZE[563]:</label>
                             <visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                            <visible>!String.IsEmpty(ListItem.Rating)</visible>
                             <font>font12</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <shadowcolor>black</shadowcolor>
@@ -397,44 +385,62 @@
                         </control>
                         <control type="label">
                             <description>Rating Value</description>
-                            <left>1348</left>
+                            <left>1350</left>
                             <top>930</top>
                             <width>60</width>
                             <height>45</height>
                             <label fallback="32016">$INFO[listitem.Rating]</label>
                             <visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                            <visible>!String.IsEmpty(ListItem.Rating)</visible>
                             <font>font12</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
                             <align>left</align>
                             <aligny>top</aligny>
-                            <visible>String.IsEqual(Skin.Font,Massive)</visible>
+                        </control>
+                        <!-- For TV Show votes: -->
+                        <control type="label">
+                            <description>Votes txt</description>
+                            <left>1405</left>
+                            <top>930</top>
+                            <width>180</width>
+                            <height>45</height>
+                            <label>$LOCALIZE[205]:</label>
+                            <visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                            <visible>!String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
+                            <font>font12</font>
+                            <textcolor>$VAR[MainColorOne]</textcolor>
+                            <shadowcolor>black</shadowcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                            <aligny>top</aligny>
                         </control>
                         <control type="label">
-                            <description>Rating Value</description>
-                            <left>1348</left>
+                            <description>Votes Value</description>
+                            <left>1488</left>
                             <top>930</top>
-                            <width>60</width>
+                            <width>180</width>
                             <height>45</height>
-                            <label fallback="32016">$INFO[listitem.Rating]</label>
+                            <label fallback="32016">$INFO[listitem.Votes]</label>
                             <visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                            <visible>!String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0)</visible>
                             <font>font12</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
                             <align>left</align>
                             <aligny>top</aligny>
-                            <visible>!String.IsEqual(Skin.Font,Massive)</visible>
                         </control>
                         <control type="label">
                             <description>Premiered txt</description>
-                            <left>1420</left>
+                            <left>1617</left>
                             <top>930</top>
                             <width>450</width>
                             <height>45</height>
                             <label>$ADDON[skin.xonfluence 31180]:</label>
                             <visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                            <visible>!String.IsEmpty(ListItem.Premiered)</visible>
                             <font>font12</font>
                             <textcolor>$VAR[MainColorOne]</textcolor>
                             <shadowcolor>black</shadowcolor>
@@ -444,35 +450,19 @@
                         </control>
                         <control type="label">
                             <description>Premiered Value</description>
-                            <left>1555</left>
+                            <left>1755</left>
                             <top>930</top>
                             <width>400</width>
                             <height>45</height>
                             <label fallback="32016">$INFO[listitem.Premiered]</label>
                             <visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
+                            <visible>!String.IsEmpty(ListItem.Premiered)</visible>
                             <font>font12</font>
                             <textcolor>white</textcolor>
                             <shadowcolor>black</shadowcolor>
                             <scroll>false</scroll>
                             <align>left</align>
                             <aligny>top</aligny>
-                            <visible>String.IsEqual(Skin.Font,Massive)</visible>
-                        </control>
-                        <control type="label">
-                            <description>Premiered Value</description>
-                            <left>1555</left>
-                            <top>930</top>
-                            <width>400</width>
-                            <height>45</height>
-                            <label fallback="32016">$INFO[listitem.Premiered]</label>
-                            <visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
-                            <font>font12</font>
-                            <textcolor>white</textcolor>
-                            <shadowcolor>black</shadowcolor>
-                            <scroll>false</scroll>
-                            <align>left</align>
-                            <aligny>top</aligny>
-                            <visible>!String.IsEqual(Skin.Font,Massive)</visible>
                         </control>
 
             </control>
