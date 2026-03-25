@@ -2159,6 +2159,11 @@ msgstr ""
 
 #empty strings from id 31599 to 31647
 
+#: /xml/DialogPlayerProcessInfo.xml
+msgctxt "#31633"
+msgid "Video stream cache"
+msgstr ""
+
 
 #empty strings from id 31649 to 31697
 
