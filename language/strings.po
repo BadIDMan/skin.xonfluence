@@ -2164,13 +2164,6 @@ msgctxt "#31633"
 msgid "Video stream cache"
 msgstr ""
 
-msgctxt "#31637"
-msgid "Audio Codec"
-msgstr ""
-
-msgctxt "#31638"
-msgid "HDR Mode"
-msgstr ""
 
 #empty strings from id 31649 to 31697
 
@@ -2804,7 +2797,6 @@ msgstr ""
 msgctxt "#31648"
 msgid "Low List"
 msgstr ""
-
 
 #Since Kodi 22, ONLY labels in the range 31000–31999 are allowed.
 #If any label outside this range is defined, you can expect skin issues, such as empty fields in Kodi instead of the label string.
