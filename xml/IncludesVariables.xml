@@ -3754,20 +3754,20 @@
         <value condition="!String.IsEmpty(Skin.String(DialogLAF))">lf_modern/</value>
         <value>lf_classic/</value>
     </variable>
-	
-	<variable name="SeasonEpisodeLabel">
+
+    <variable name="SeasonEpisodeLabel">
         <value condition="String.IsEmpty(ListItem.Season)">$INFO[ListItem.Title] - $INFO[ListItem.Episode]</value>
         <value condition="Integer.IsLess(ListItem.Episode,10) + Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Title] - $INFO[ListItem.Season,s0,]$INFO[ListItem.Episode,e0,]</value>
         <value condition="Integer.IsLess(ListItem.Episode,10) + !Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Title] - $INFO[ListItem.Season,s,]$INFO[ListItem.Episode,e0,]</value>
         <value condition="!Integer.IsLess(ListItem.Episode,10) + Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Title] - $INFO[ListItem.Season,s0,]$INFO[ListItem.Episode,e,]</value>
         <value condition="!Integer.IsLess(ListItem.Episode,10) + !Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.Title] - $INFO[ListItem.Season,s,]$INFO[ListItem.Episode,e,]</value>
     </variable>
-	
-	<variable name="SeasonEpisodeLabel2">
+
+    <variable name="SeasonEpisodeLabel2">
         <value condition="!String.IsEmpty(ListItem.Property(AirDay))">$INFO[ListItem.Premiered] @ $INFO[ListItem.Property(AirTime)]</value>
     </variable>
-	
-	<variable name="WeatherIconExt">
+
+    <variable name="WeatherIconExt">
         <value condition="String.Contains(Skin.String(WeatherIcons.path),animated)" />
         <value condition="!String.IsEmpty(Skin.String(WeatherIcons.ext))">$INFO[Skin.String(WeatherIcons.ext)]</value>
         <value>.png</value>
@@ -3778,39 +3778,46 @@
         <value condition="!String.IsEmpty(Skin.String(WeatherFanart.ext))">$INFO[Skin.String(WeatherFanart.ext)]</value>
         <value>.jpg</value>
     </variable>
-	
-	<expression name="IsVideoPlaylist">[Container(9000).HasFocus(1) + Skin.String(HomeItem.1.PlaylistType,video)] | 
-	                                   [Container(9000).HasFocus(2) + Skin.String(HomeItem.2.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(3) + Skin.String(HomeItem.3.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(4) + Skin.String(HomeItem.4.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(5) + Skin.String(HomeItem.5.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(6) + Skin.String(HomeItem.6.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(7) + Skin.String(HomeItem.7.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(8) + Skin.String(HomeItem.8.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(9) + Skin.String(HomeItem.9.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(10) + Skin.String(HomeItem.10.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(11) + Skin.String(HomeItem.11.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(12) + Skin.String(HomeItem.12.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(13) + Skin.String(HomeItem.13.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(14) + Skin.String(HomeItem.14.PlaylistType,video)] | 
-									   [Container(9000).HasFocus(15) + Skin.String(HomeItem.15.PlaylistType,video)]</expression>
-	
-	<expression name="IsMusicPlaylist">[Container(9000).HasFocus(1) + Skin.String(HomeItem.1.PlaylistType,music)] | 
-	                                     [Container(9000).HasFocus(2) + Skin.String(HomeItem.2.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(3) + Skin.String(HomeItem.3.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(4) + Skin.String(HomeItem.4.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(5) + Skin.String(HomeItem.5.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(6) + Skin.String(HomeItem.6.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(7) + Skin.String(HomeItem.7.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(8) + Skin.String(HomeItem.8.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(9) + Skin.String(HomeItem.9.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(10) + Skin.String(HomeItem.10.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(11) + Skin.String(HomeItem.11.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(12) + Skin.String(HomeItem.12.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(13) + Skin.String(HomeItem.13.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(14) + Skin.String(HomeItem.14.PlaylistType,music)] | 
-									     [Container(9000).HasFocus(15) + Skin.String(HomeItem.15.PlaylistType,music)]</expression>
-	
+
+    <expression name="IsVideoPlaylist">[Container(9000).HasFocus(1) + Skin.String(HomeItem.1.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(2) + Skin.String(HomeItem.2.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(3) + Skin.String(HomeItem.3.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(4) + Skin.String(HomeItem.4.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(5) + Skin.String(HomeItem.5.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(6) + Skin.String(HomeItem.6.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(7) + Skin.String(HomeItem.7.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(8) + Skin.String(HomeItem.8.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(9) + Skin.String(HomeItem.9.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(10) + Skin.String(HomeItem.10.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(11) + Skin.String(HomeItem.11.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(12) + Skin.String(HomeItem.12.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(13) + Skin.String(HomeItem.13.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(14) + Skin.String(HomeItem.14.PlaylistType,video)] | 
+                                       [Container(9000).HasFocus(15) + Skin.String(HomeItem.15.PlaylistType,video)]</expression>
+    
+    <expression name="IsMusicPlaylist">[Container(9000).HasFocus(1) + Skin.String(HomeItem.1.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(2) + Skin.String(HomeItem.2.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(3) + Skin.String(HomeItem.3.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(4) + Skin.String(HomeItem.4.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(5) + Skin.String(HomeItem.5.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(6) + Skin.String(HomeItem.6.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(7) + Skin.String(HomeItem.7.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(8) + Skin.String(HomeItem.8.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(9) + Skin.String(HomeItem.9.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(10) + Skin.String(HomeItem.10.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(11) + Skin.String(HomeItem.11.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(12) + Skin.String(HomeItem.12.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(13) + Skin.String(HomeItem.13.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(14) + Skin.String(HomeItem.14.PlaylistType,music)] | 
+                                         [Container(9000).HasFocus(15) + Skin.String(HomeItem.15.PlaylistType,music)]</expression>
+
+    <variable name="PVR_Encryption_Status">
+        <value condition="VideoPlayer.IsPVR + VideoPlayer.Content(LiveTV) + Integer.GreaterThan(VideoPlayer.IsEncrypted,0)">[COLOR=red]$[/COLOR] $INFO[PVR.ActStreamEncryptionName]</value>
+        <value>$INFO[PVR.ActStreamEncryptionName]</value>
+    </variable>
+
+
+
 </includes>
 
 

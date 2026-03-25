@@ -1671,7 +1671,7 @@
     <include name="Clock">
         <control type="label" id="1">
             <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(DialogVolumeBar.xml)">Conditional</animation>
-			<description>time label</description>
+            <description>time label</description>
             <right>30</right>
             <top>8</top>
             <width>300</width>
@@ -1695,12 +1695,12 @@
     </include>
     <include name="Date">
         <control type="group" id="1">
-			<animation effect="fade" start="100" end="0" time="200" condition="[Control.IsVisible(508) | Control.IsVisible(509) | 
-			                                                                    Window.IsVisible(MyWeather.xml) | Window.IsVisible(DialogVolumeBar.xml) | 
-																				Window.IsVisible(FileManager.xml) | Window.IsVisible(SmartPlaylistEditor.xml) | 
-																				Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | 
-																				Window.IsVisible(SkinSettings.xml)]">Conditional</animation>
-		    <control type="label" id="1">
+            <animation effect="fade" start="100" end="0" time="200" condition="[Control.IsVisible(508) | Control.IsVisible(509) | 
+                                                                                Window.IsVisible(MyWeather.xml) | Window.IsVisible(DialogVolumeBar.xml) | 
+                                                                                Window.IsVisible(FileManager.xml) | Window.IsVisible(SmartPlaylistEditor.xml) | 
+                                                                                Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | 
+                                                                                Window.IsVisible(SkinSettings.xml)]">Conditional</animation>
+            <control type="label" id="1">
                 <description>Date label</description>
                 <right>30</right>
                 <top>52</top>
@@ -1721,7 +1721,7 @@
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
             </control>
-		    <control type="label" id="1">
+            <control type="label" id="1">
                 <description>Date label</description>
                 <right>30</right>
                 <top>980</top>
@@ -1741,8 +1741,8 @@
                 <animation effect="slide" start="0,0" end="0,-82" time="150" condition="Window.IsVisible(busydialog)">conditional</animation>
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + Skin.HasSetting(HideCPUTemp)</visible>
-            </control>			
-		    <control type="label" id="1">
+            </control>            
+            <control type="label" id="1">
                 <description>Date label</description>
                 <right>30</right>
                 <top>52</top>
@@ -1763,7 +1763,7 @@
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + !String.IsEqual(System.CPUTemperature,Not Available)</visible>
             </control>
-		    <control type="label" id="1">
+            <control type="label" id="1">
                 <description>Date label</description>
                 <right>30</right>
                 <top>52</top>
@@ -1784,9 +1784,9 @@
                 <include condition="!String.IsEmpty(Skin.String(HomeTrans))">HomeTransparentEffect</include>
                 <visible>!Skin.HasSetting(HideSystemTime) + !Skin.HasSetting(HideCPUTemp) + String.IsEqual(System.CPUTemperature,Not Available)</visible>
             </control>
-		</control>	
+        </control>    
     </include>
-	
+    
     <include name="CDArtSpinner">
         <animation effect="slide" start="0,0" end="105,0" time="1200" delay="500" condition="Player.Playing | Player.Forwarding | Player.Rewinding">Conditional</animation>
         <animation effect="rotate" end="-360" center="auto" time="2400" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
@@ -2399,65 +2399,65 @@
     </include>
     <include name="MenuMoviePlayListCheck">
         <visible>
-			!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
-			!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
-			!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
-			!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
-			!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
-			!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
-			!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
-			!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
-			!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
-			!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
-			!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
-			!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
-			!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
-			!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15)
-		</visible>
+            !String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
+            !String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
+            !String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
+            !String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
+            !String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
+            !String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
+            !String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
+            !String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
+            !String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
+            !String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
+            !String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
+            !String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
+            !String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
+            !String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,VideoPlayList) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15)
+        </visible>
     </include>
     <include name="MenuMusicPlayListCheck">
         <visible>
-			!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
-			!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
-			!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
-			!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
-			!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
-			!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
-			!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
-			!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
-			!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
-			!String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
-			!String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
-			!String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
-			!String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
-			!String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15)
-		</visible>
+            !String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.1) |
+            !String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.2) |
+            !String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.3) |
+            !String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.4) |
+            !String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.5) |
+            !String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.6) |
+            !String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.7) |
+            !String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.8) |
+            !String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.9) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.10) |
+            !String.IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.11) |
+            !String.IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.12) |
+            !String.IsEmpty(Skin.String(HomeItem.13.Playlist)) + Skin.String(HomeItem.13.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.13) |
+            !String.IsEmpty(Skin.String(HomeItem.14.Playlist)) + Skin.String(HomeItem.14.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.14) |
+            !String.IsEmpty(Skin.String(HomeItem.15.Playlist)) + Skin.String(HomeItem.15.Type,MusicPlaylist) + String.IsEqual(Window(Home).Property(UsrSelectBtn),HomeItem.15)
+        </visible>
     </include>
     <include name="MenuVideoNodeListCheck">
         <visible>
-			!String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.1) |
-			!String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.2) |
-			!String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.3) |
-			!String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.4) |
-			!String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.5) |
-			!String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.6) |
-			!String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.7) |
-			!String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.8) |
-			!String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.9) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.10) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.11.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.11) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.12.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.12) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.13.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.13) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.14.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.14) |
-			!String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.15.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.15)
-		</visible>
+            !String.IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.1) |
+            !String.IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.2) |
+            !String.IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.3) |
+            !String.IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.4) |
+            !String.IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.5) |
+            !String.IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.6) |
+            !String.IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.7) |
+            !String.IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.8) |
+            !String.IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.9) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.10) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.11.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.11) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.12.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.12) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.13.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.13) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.14.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.14) |
+            !String.IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.15.Type,VideoNode) + String.IsEqual(Window(home).Property(UsrSelectBtn),HomeItem.15)
+        </visible>
     </include>
     <include name="TopLeftInfo">
         <control type="group" id="1">
-		    <animation effect="fade" start="100" end="0" time="200" condition="SkinHasSetting(NotificationsTopLeft) + [Window.IsVisible(notification) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]">Conditional</animation>
-		    <control type="image" id="1">
+            <animation effect="fade" start="100" end="0" time="200" condition="SkinHasSetting(NotificationsTopLeft) + [Window.IsVisible(notification) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]">Conditional</animation>
+            <control type="image" id="1">
                 <description>LOGO</description>
                 <left>15</left>
                 <top>8</top>
@@ -2502,13 +2502,13 @@
                 <top>0</top>
                 <visible>!String.IsEmpty(Weather.Plugin)</visible>
                 <include>Window_OpenClose_Animation</include>
-     		    <control type="multiimage" id="1">
+                 <control type="multiimage" id="1">
                     <description>Weather image</description>
                     <left>0</left>
                     <top>0</top>
                     <width>90</width>
                     <height>90</height>
-				    <aspectratio aligny="center">keep</aspectratio>
+                    <aspectratio aligny="center">keep</aspectratio>
                     <timeperimage>70</timeperimage>
                     <fadetime>1</fadetime>
                     <randomize>false</randomize>
@@ -2569,7 +2569,7 @@
                     </control>
                 </control>
             </control>
-		</control>	
+        </control>    
     </include>
     <include name="ExtendedInfoAutoComplete">
         <control type="group" id="5000">
@@ -2642,8 +2642,8 @@
             <control type="group">
                 <depth>DepthHeader</depth>
                 <animation effect="fade" start="100" end="0" time="0" condition="Skin.HasSetting(NotificationsTopLeft) + [Window.IsVisible(notification) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogExtendedProgressBar.xml)]">Conditional</animation>
-				<visible>!Skin.HasSetting(NotificationsTopLeft) | [Skin.HasSetting(NotificationsTopLeft) + !Window.IsVisible(BusyDialog)]</visible>
-				<control type="image">
+                <visible>!Skin.HasSetting(NotificationsTopLeft) | [Skin.HasSetting(NotificationsTopLeft) + !Window.IsVisible(BusyDialog)]</visible>
+                <control type="image">
                     <description>Section header image</description>
                     <left>30</left>
                     <top>4</top>
@@ -2678,7 +2678,7 @@
                     </control>
                 </control>
                 <include>Clock</include>
-				<include>Date</include>
+                <include>Date</include>
                 <include condition="Skin.HasSetting(AllScreenTopLeftWidget) + !Skin.HasSetting(HideTopLeftWindows)">TopLeftInfo</include>
             </control>
         </definition>
@@ -3322,17 +3322,17 @@
             </focusedlayout>
         </control>
     </include>
-	
-	<include name="StandardAutoScroll">
-	    <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-	</include>
-	
-	<include name="SlowerAutoScroll">
-	    <autoscroll time="4500" delay="16000" repeat="10000">true</autoscroll>
-	</include>
-	
-	<include name="StandardPowerItems">
-	    <control type="grouplist" id="9000">
+    
+    <include name="StandardAutoScroll">
+        <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+    </include>
+    
+    <include name="SlowerAutoScroll">
+        <autoscroll time="4500" delay="16000" repeat="10000">true</autoscroll>
+    </include>
+    
+    <include name="StandardPowerItems">
+        <control type="grouplist" id="9000">
             <left>705</left>
             <top>0</top>
             <width>510</width>
@@ -3597,7 +3597,7 @@
                     <label>13013</label>
                 </control>
             </control>
-			<control type="group" id="81">
+            <control type="group" id="81">
                 <width>510</width>
                 <height>60</height>
                 <visible>!Skin.HasSetting(HideRebootToAndroid) + System.CanReboot + [System.Platform.Linux | System.Platform.Linux.RaspberryPi | System.Platform.Android]</visible>
@@ -3828,9 +3828,9 @@
                 <texture border="20,0,19,20">$VAR[DialogPath]DialogContextBottom.png</texture>
             </control>
         </control>
-	</include>
-	
-	
+    </include>
+    
+    
 </includes>
 
 

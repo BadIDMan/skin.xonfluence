@@ -8,31 +8,47 @@
         <top>0</top>
     </coordinates>
     <controls>
+
+<!-- Background size Group -->
         <control type="group">
             <depth>DepthOSD+</depth>
+<!-- LiveTV -->
             <control type="image">
                 <description>media info background image</description>
                 <left>0</left>
                 <top>0</top>
                 <width>1920</width>
-                <height>368</height>
+                <height>720</height>
                 <texture>black-back.png</texture>
-                <visible>!System.HasAddon(service.internet.and.player.filesize.information)</visible>
+                <visible>VideoPlayer.Content(LiveTV)</visible>
             </control>
+<!-- no LiveTV and Addon -->
             <control type="image">
                 <description>media info background image</description>
                 <left>0</left>
                 <top>0</top>
                 <width>1920</width>
-                <height>552</height>
+                <height>712</height>
                 <texture>black-back.png</texture>
-                <visible>System.HasAddon(service.internet.and.player.filesize.information)</visible>
+                <visible>!VideoPlayer.Content(LiveTV) + System.HasAddon(service.internet.and.player.filesize.information)</visible>
             </control>
+<!-- no LiveTV and no Addon -->
+            <control type="image">
+                <description>media info background image</description>
+                <left>0</left>
+                <top>0</top>
+                <width>1920</width>
+                <height>602</height>
+                <texture>black-back.png</texture>
+                <visible>!VideoPlayer.Content(LiveTV) + !System.HasAddon(service.internet.and.player.filesize.information)</visible>
+            </control>
+        </control>
+
 
 <!--- Video Processing information  -->
             <control type="label">
                 <description>Header</description>
-                <left>75</left>
+                <left>55</left>
                 <top>15</top>
                 <width>848</width>
                 <height>38</height>
@@ -44,7 +60,7 @@
             </control>
             <control type="label">
                 <description>Hardware decoding</description>
-                <left>75</left>
+                <left>55</left>
                 <top>60</top>
                 <width>248</width>
                 <height>38</height>
@@ -56,7 +72,7 @@
             </control>
             <control type="label">
                 <description>Hardware decoding value</description>
-                <left>330</left>
+                <left>310</left>
                 <top>60</top>
                 <width>518</width>
                 <height>38</height>
@@ -69,7 +85,7 @@
             </control>
             <control type="label">
                 <description>Hardware decoding value</description>
-                <left>330</left>
+                <left>310</left>
                 <top>60</top>
                 <width>518</width>
                 <height>38</height>
@@ -81,8 +97,33 @@
                 <visible>!Player.Process(videohwdecoder)</visible>
             </control>
             <control type="label">
+                <description>CacheLevel value</description>
+                <left>450</left>
+                <top>60</top>
+                <width>500</width>
+                <height>38</height>
+                <label>$ADDON[skin.xonfluence 31633]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>CacheLevel value</description>
+                <left>700</left>
+                <top>60</top>
+                <width>500</width>
+                <height>38</height>
+                <scroll>true</scroll>
+                <label>$INFO[Player.CacheLevel, %]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+            <control type="label">
                 <description>Decoder</description>
-                <left>75</left>
+                <left>55</left>
                 <top>98</top>
                 <width>248</width>
                 <height>38</height>
@@ -94,7 +135,7 @@
             </control>
             <control type="label">
                 <description>Decoder value</description>
-                <left>330</left>
+                <left>310</left>
                 <top>98</top>
                 <width>675</width>
                 <height>38</height>
@@ -107,7 +148,7 @@
             </control>
             <control type="label">
                 <description>Deinterlace</description>
-                <left>75</left>
+                <left>55</left>
                 <top>136</top>
                 <width>248</width>
                 <height>38</height>
@@ -119,7 +160,7 @@
             </control>
             <control type="label">
                 <description>Deinterlace value</description>
-                <left>330</left>
+                <left>310</left>
                 <top>136</top>
                 <width>675</width>
                 <height>38</height>
@@ -132,7 +173,7 @@
             </control>
             <control type="label">
                 <description>Resolution</description>
-                <left>75</left>
+                <left>55</left>
                 <top>174</top>
                 <width>248</width>
                 <height>38</height>
@@ -144,7 +185,7 @@
             </control>
             <control type="label">
                 <description>Resolution value</description>
-                <left>330</left>
+                <left>310</left>
                 <top>174</top>
                 <width>675</width>
                 <height>38</height>
@@ -155,19 +196,18 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
             </control>
-<!--- Video Processing information  -->
 
-
+<!-- AMLogic Group information -->
 <!-- AMLogic Hardware information -->
             <control type="group">
                 <visible>Player.HasVideo + !String.IsEmpty(Player.Process(amlogic.displaymode))</visible>
                 <control type="label">
                     <description>Header</description>
-                    <left>940</left>
+                    <left>920</left>
                     <top>15</top>
                     <width>848</width>
                     <height>38</height>
-                    <label>AMLogic $LOCALIZE[13281] $LOCALIZE[29914]</label>
+                    <label>AMLogic $LOCALIZE[13281] $LOCALIZE[29915]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font13_title</font>
@@ -175,11 +215,11 @@
                 </control>
                 <control type="label">
                     <description>CPU Speed</description>
-                    <left>940</left>
+                    <left>920</left>
                     <top>60</top>
                     <width>165</width>
                     <height>38</height>
-                    <label>$LOCALIZE[13284]:</label>
+                    <label>$LOCALIZE[13284]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font12</font>
@@ -187,7 +227,7 @@
                 </control>
                 <control type="label">
                     <description>CPU speed value</description>
-                    <left>1095</left>
+                    <left>1075</left>
                     <top>60</top>
                     <width>450</width>
                     <height>38</height>
@@ -200,7 +240,7 @@
                 </control>
                 <control type="label">
                     <description>SoC Temp</description>
-                    <left>940</left>
+                    <left>920</left>
                     <top>98</top>
                     <width>165</width>
                     <height>38</height>
@@ -212,7 +252,7 @@
                 </control>
                 <control type="label">
                     <description>SoC Temp value</description>
-                    <left>1095</left>
+                    <left>1075</left>
                     <top>98</top>
                     <width>450</width>
                     <height>38</height>
@@ -225,7 +265,7 @@
                 </control>
                 <control type="label">
                     <description>System FPS</description>
-                    <left>940</left>
+                    <left>920</left>
                     <top>136</top>
                     <width>165</width>
                     <height>38</height>
@@ -237,7 +277,7 @@
                 </control>
                 <control type="label">
                     <description>System FPS value</description>
-                    <left>1095</left>
+                    <left>1075</left>
                     <top>136</top>
                     <width>450</width>
                     <height>38</height>
@@ -250,7 +290,7 @@
                 </control>
                 <control type="label">
                     <description>Ram</description>
-                    <left>940</left>
+                    <left>920</left>
                     <top>174</top>
                     <width>165</width>
                     <height>38</height>
@@ -262,23 +302,22 @@
                 </control>
                 <control type="label">
                     <description>RAM value</description>
-                    <left>1095</left>
+                    <left>1075</left>
                     <top>174</top>
                     <width>450</width>
                     <height>38</height>
                     <scroll>true</scroll>
-                    <label fallback="1446">$INFO[System.Memory(used)] out of $INFO[System.Memory(total)]</label>
+                    <label fallback="1446">$INFO[System.Memory(used)] out of $INFO[System.Memory(total)] • $INFO[System.Memory(used.percent)]</label>
                     <align>left</align>
                     <aligny>center</aligny>
                     <font>font12</font>
                     <textcolor>white</textcolor>
                 </control>
-<!-- AMLogic Hardware information -->
 
 <!-- AMLogic Video information -->
                 <control type="label">
                     <description>Header</description>
-                    <left>1420</left>
+                    <left>1470</left>
                     <top>15</top>
                     <width>848</width>
                     <height>38</height>
@@ -290,7 +329,7 @@
                 </control>
                 <control type="label">
                     <description>Display mode</description>
-                    <left>1420</left>
+                    <left>1470</left>
                     <top>60</top>
                     <width>165</width>
                     <height>38</height>
@@ -302,7 +341,7 @@
                 </control>
                 <control type="label">
                     <description>Display mode value</description>
-                    <left>1600</left>
+                    <left>1650</left>
                     <top>60</top>
                     <width>450</width>
                     <height>38</height>
@@ -315,7 +354,7 @@
                 </control>
                 <control type="label">
                     <description>Color depth label</description>
-                    <left>1420</left>
+                    <left>1470</left>
                     <top>98</top>
                     <width>165</width>
                     <height>38</height>
@@ -327,7 +366,7 @@
                 </control>
                 <control type="label">
                     <description>Color depth value</description>
-                    <left>1600</left>
+                    <left>1650</left>
                     <top>98</top>
                     <width>450</width>
                     <height>38</height>
@@ -340,7 +379,7 @@
                 </control>
                 <control type="label">
                     <description>EOTF</description>
-                    <left>1420</left>
+                    <left>1470</left>
                     <top>136</top>
                     <width>165</width>
                     <height>38</height>
@@ -352,7 +391,7 @@
                 </control>
                 <control type="label">
                     <description>EOTF value</description>
-                    <left>1600</left>
+                    <left>1650</left>
                     <top>136</top>
                     <width>450</width>
                     <height>38</height>
@@ -363,13 +402,39 @@
                     <font>font12</font>
                     <textcolor>white</textcolor>
                 </control>
+                <control type="label">
+                    <description>HDRcodec value</description>
+                    <left>1470</left>
+                    <top>174</top>
+                    <width>165</width>
+                    <height>38</height>
+                    <label>Video Type:</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12</font>
+                    <textcolor>$VAR[MainColorOne]</textcolor>
+                    <visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
+                </control>
+                <control type="label">
+                    <description>HDRcodec value</description>
+                    <left>1650</left>
+                    <top>174</top>
+                    <width>450</width>
+                    <height>38</height>
+                    <scroll>true</scroll>
+                    <label fallback="1446">$INFO[VideoPlayer.HdrType]</label>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <font>font12</font>
+                    <textcolor>white</textcolor>
+                    <visible>!String.IsEmpty(VideoPlayer.HdrType)</visible>
+                </control>
             </control>
-<!-- AMLogic Video information -->
 
 <!-- Audio process information -->
             <control type="label">
                 <description>Header</description>
-                <left>75</left>
+                <left>55</left>
                 <top>244</top>
                 <width>848</width>
                 <height>38</height>
@@ -381,8 +446,8 @@
             </control>
             <control type="label">
                 <description>Decoder</description>
-                <left>75</left>
-                <top>288</top>
+                <left>55</left>
+                <top>289</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$ADDON[skin.xonfluence 31012]:</label>
@@ -393,8 +458,8 @@
             </control>
             <control type="label">
                 <description>Decoder value</description>
-                <left>330</left>
-                <top>288</top>
+                <left>310</left>
+                <top>289</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -406,8 +471,8 @@
             </control>
             <control type="label">
                 <description>Channels</description>
-                <left>75</left>
-                <top>326</top>
+                <left>55</left>
+                <top>327</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19019]:</label>
@@ -418,8 +483,8 @@
             </control>
             <control type="label">
                 <description>Channels value</description>
-                <left>330</left>
-                <top>326</top>
+                <left>310</left>
+                <top>327</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -429,17 +494,18 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
             </control>
-<!-- Audio process information -->
-            
-            
-<!-- System information -->
+
+
+<!--- Added by rafikW: System, Network and File information -->
+<!--- Added by rafikW: Common group with Header, CPU and Local IP -->
+        <control type="group">
             <control type="label">
                 <description>Header</description>
-                <left>940</left>
-                <top>244</top>
+                <left>55</left>
+                <top>396</top>
                 <width>848</width>
                 <height>38</height>
-                <label>$LOCALIZE[138]</label>
+                <label>$LOCALIZE[13000], $LOCALIZE[13279] and $LOCALIZE[561] [LOWERCASE]$LOCALIZE[19033][/LOWERCASE]</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font13_title</font>
@@ -447,8 +513,8 @@
             </control>
             <control type="label">
                 <description>CPU</description>
-                <left>940</left>
-                <top>288</top>
+                <left>55</left>
+                <top>441</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[13271]</label>
@@ -459,8 +525,8 @@
             </control>
             <control type="label">
                 <description>CPU value</description>
-                <left>1195</left>
-                <top>288</top>
+                <left>310</left>
+                <top>441</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -471,134 +537,37 @@
                 <textcolor>white</textcolor>
             </control>
             <control type="label">
-                <description>Memory</description>
-                <left>940</left>
-                <top>326</top>
+                <description>Local IP</description>
+                <left>55</left>
+                <top>479</top>
                 <width>248</width>
                 <height>38</height>
-                <label>$ADDON[skin.xonfluence 31014]:</label>
+                <label>$LOCALIZE[719]:</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font12</font>
                 <textcolor>$VAR[MainColorOne]</textcolor>
             </control>
             <control type="label">
-                <description>Memory value</description>
-                <left>1195</left>
-                <top>326</top>
+                <description>Local IPAddress value</description>
+                <left>310</left>
+                <top>479</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
-                <label>$INFO[System.Memory(used.percent)]</label>
+                <label fallback="719">$INFO[Network.IPAddress]</label>
                 <align>left</align>
                 <aligny>center</aligny>
                 <font>font12</font>
                 <textcolor>white</textcolor>
             </control>
-<!-- System information -->
-
-<!--- Added by rafikW File and Internet information  -->
-        <control type="group">
-            <visible>System.HasAddon(service.internet.and.player.filesize.information)</visible>
-            <control type="label">
-                <description>Header</description>
-                <left>75</left>
-                <top>396</top>
-                <width>848</width>
-                <height>38</height>
-                <label>$LOCALIZE[561] and $LOCALIZE[443] $LOCALIZE[14116]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font13_title</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
-            </control>            
-            <control type="label">
-                <description>File name</description>
-                <left>75</left>
-                <top>434</top>
-                <width>248</width>
-                <height>38</height>
-                <label>$LOCALIZE[21800]:</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
-            </control>
-            <control type="label">
-                <description>File name value</description>
-                <left>330</left>
-                <top>434</top>
-                <width>1675</width>
-                <height>38</height>
-                <scroll>true</scroll>
-                <label>$INFO[Player.Filename]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>white</textcolor>
-            </control>
-
-<!--- Added by rafikW video file size -->
-            <control type="label">
-                <description>File size label</description>
-                <left>75</left>
-                <top>472</top>
-                <width>248</width>
-                <height>38</height>
-                <label>$LOCALIZE[21802]:</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
-            </control>
-            <control type="label">
-                <description>File size value</description>
-                <left>330</left>
-                <top>472</top>
-                <width>1675</width>
-                <height>38</height>
-                <label>$INFO[Window(Home).Property(Player.FileSize.GB)]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>white</textcolor>
-            </control>
-<!--- Added by rafikW video file size -->
-
-<!--- Added by rafikW video time remaining -->
-            <control type="label">
-                <description>Time remaining label</description>
-                <left>75</left>
-                <top>510</top>
-                <width>248</width>
-                <height>38</height>
-                <label>$LOCALIZE[555] remaining:</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>$VAR[MainColorOne]</textcolor>
-            </control>
-            <control type="label">
-                <description>Time remaining value</description>
-                <left>330</left>
-                <top>510</top>
-                <width>1675</width>
-                <height>38</height>
-                <label>$INFO[Player.TimeRemaining]</label>
-                <align>left</align>
-                <aligny>center</aligny>
-                <font>font12</font>
-                <textcolor>white</textcolor>
-            </control>
-<!--- Added by rafikW video time remaining -->
-<!--- Added by rafikW File information  -->
-
-<!--- Added by rafikW Network information  -->
-<!--- Added by rafikW Public IP -->
+<!--- Added by rafikW: System, Network and File information Group for No LiveTV and Has Addon -->
+         <control type="group">
+            <visible>!VideoPlayer.Content(LiveTV) + System.HasAddon(service.internet.and.player.filesize.information)</visible>
             <control type="label">
                 <description>Public IP label</description>
-                <left>685</left>
-                <top>472</top>
+                <left>55</left>
+                <top>517</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[29935] $LOCALIZE[150]:</label>
@@ -609,8 +578,8 @@
             </control>
             <control type="label">
                 <description>Public IP value</description>
-                <left>940</left>
-                <top>472</top>
+                <left>310</left>
+                <top>517</top>
                 <width>675</width>
                 <height>38</height>
                 <label>$INFO[Window(Home).Property(PUBLIC.IP)]</label>
@@ -619,13 +588,10 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
             </control>
-
-<!--- Added by rafikW Public IP -->
-<!--- Added by rafikW Internet provider-->
             <control type="label">
                 <description>Internet Provider</description>
-                <left>685</left>
-                <top>510</top>
+                <left>55</left>
+                <top>555</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[443] $LOCALIZE[15225]:</label>
@@ -636,9 +602,9 @@
             </control>
             <control type="label">
                 <description>Internet Provider value</description>
-                <left>940</left>
-                <top>510</top>
-                <width>875</width>
+                <left>310</left>
+                <top>555</top>
+                <width>1675</width>
                 <height>38</height>
                 <label>$INFO[Window(Home).Property(INTERNET.PROVIDER)]</label>
                 <align>left</align>
@@ -646,19 +612,279 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
             </control>
-        </control>
-<!--- Added by rafikW Public IP -->
-<!--- Added by rafikW Network information  -->
+            <control type="label">
+                <description>File name</description>
+                <left>55</left>
+                <top>593</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[21800]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>File name value</description>
+                <left>310</left>
+                <top>593</top>
+                <width>1675</width>
+                <height>38</height>
+                <label>$INFO[Player.Filename]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+            <control type="label">
+                <description>File size label</description>
+                <left>55</left>
+                <top>631</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[21802]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>File size value</description>
+                <left>310</left>
+                <top>631</top>
+                <width>1675</width>
+                <height>38</height>
+                <label>$INFO[Window(Home).Property(Player.FileSize.GB)]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+            <control type="label">
+                <description>Time remaining label</description>
+                <left>55</left>
+                <top>669</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[555] remaining:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>Time remaining value</description>
+                <left>310</left>
+                <top>669</top>
+                <width>1675</width>
+                <height>38</height>
+                <label>$INFO[Player.TimeRemaining]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+         </control>
+
+<!--- Added by rafikW: System, Network and File information Group for LiveTV and Has Addon -->
+         <control type="group">
+            <visible>VideoPlayer.Content(LiveTV) + System.HasAddon(service.internet.and.player.filesize.information)</visible>
+            <control type="label">
+                <description>Public IP label</description>
+                <left>55</left>
+                <top>517</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[29935] $LOCALIZE[150]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>Public IP value</description>
+                <left>310</left>
+                <top>517</top>
+                <width>675</width>
+                <height>38</height>
+                <label>$INFO[Window(Home).Property(PUBLIC.IP)]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+            <control type="label">
+                <description>Internet Provider</description>
+                <left>55</left>
+                <top>555</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[443] $LOCALIZE[15225]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>Internet Provider value</description>
+                <left>310</left>
+                <top>555</top>
+                <width>575</width>
+                <height>38</height>
+                <label>$INFO[Window(Home).Property(INTERNET.PROVIDER)]</label>
+                <scroll>true</scroll>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+            <control type="label">
+                <description>File name</description>
+                <left>55</left>
+                <top>593</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[21800]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>File name value</description>
+                <left>310</left>
+                <top>593</top>
+                <width>575</width>
+                <height>38</height>
+                <label>$INFO[Player.Filename]</label>
+                <scroll>true</scroll>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+            <control type="label">
+                <description>File size label</description>
+                <left>55</left>
+                <top>631</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[21802]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>File size value</description>
+                <left>310</left>
+                <top>631</top>
+                <width>1675</width>
+                <height>38</height>
+                <label>$INFO[Window(Home).Property(Player.FileSize.GB)]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+         </control>
+
+<!--- Added by rafikW: System, Network and File information Group for No LiveTV and No Addon -->
+         <control type="group">
+            <visible>!VideoPlayer.Content(LiveTV) + !System.HasAddon(service.internet.and.player.filesize.information)</visible>
+            <control type="label">
+                <description>File name</description>
+                <left>55</left>
+                <top>517</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[21800]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>File name value</description>
+                <left>310</left>
+                <top>517</top>
+                <width>1875</width>
+                <height>38</height>
+                <label>$INFO[Player.Filename]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+            <control type="label">
+                <description>Time remaining label</description>
+                <left>55</left>
+                <top>555</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[555] remaining:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>Time remaining value</description>
+                <left>310</left>
+                <top>555</top>
+                <width>1675</width>
+                <height>38</height>
+                <label>$INFO[Player.TimeRemaining]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+         </control>
+
+<!--- Added by rafikW: System, Network and File information Group for LiveTV and No Addon -->
+         <control type="group">
+            <visible>VideoPlayer.Content(LiveTV) + !System.HasAddon(service.internet.and.player.filesize.information)</visible>
+            <control type="label">
+                <description>File name</description>
+                <left>55</left>
+                <top>517</top>
+                <width>248</width>
+                <height>38</height>
+                <label>$LOCALIZE[21800]:</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>$VAR[MainColorOne]</textcolor>
+            </control>
+            <control type="label">
+                <description>File name value</description>
+                <left>310</left>
+                <top>517</top>
+                <width>575</width>
+                <height>38</height>
+                <label>$INFO[Player.Filename]</label>
+                <scroll>true</scroll>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+         </control>
         </control>
 
+
+
 <!-- PVR Info -->
-        <control type="group">
+       <control type="group">
             <depth>DepthOSD+</depth>
-            <visible>VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible>
-            <left>960</left>
+            <visible>VideoPlayer.Content(LiveTV)</visible>
+<!--        <visible>VideoPlayer.Content(LiveTV) + system.getbool(pvrplayback.signalquality)</visible> -->
+            <left>865</left>
+            <top>229</top>
             <control type="label">
                 <description>Header</description>
-                <left>75</left>
+                <left>55</left>
                 <top>15</top>
                 <width>848</width>
                 <height>38</height>
@@ -670,7 +896,7 @@
             </control>
             <control type="label">
                 <description>Backend</description>
-                <left>75</left>
+                <left>55</left>
                 <top>60</top>
                 <width>248</width>
                 <height>38</height>
@@ -682,7 +908,7 @@
             </control>
             <control type="label">
                 <description>Backend value</description>
-                <left>330</left>
+                <left>310</left>
                 <top>60</top>
                 <width>675</width>
                 <height>38</height>
@@ -695,7 +921,7 @@
             </control>
             <control type="label">
                 <description>Device</description>
-                <left>75</left>
+                <left>55</left>
                 <top>98</top>
                 <width>248</width>
                 <height>38</height>
@@ -707,7 +933,7 @@
             </control>
             <control type="label">
                 <description>Device value</description>
-                <left>330</left>
+                <left>310</left>
                 <top>98</top>
                 <width>675</width>
                 <height>38</height>
@@ -720,8 +946,8 @@
             </control>
             <control type="label">
                 <description>Status</description>
-                <left>75</left>
-                <top>136</top>
+                <left>55</left>
+                <top>360</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19007]:</label>
@@ -732,8 +958,8 @@
             </control>
             <control type="label">
                 <description>Status value</description>
-                <left>330</left>
-                <top>136</top>
+                <left>310</left>
+                <top>360</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -745,8 +971,8 @@
             </control>
             <control type="label">
                 <description>Signal</description>
-                <left>75</left>
-                <top>174</top>
+                <left>55</left>
+                <top>398</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19008]:</label>
@@ -757,8 +983,8 @@
             </control>
             <control type="progress">
                 <description>Progressbar</description>
-                <left>330</left>
-                <top>183</top>
+                <left>310</left>
+                <top>410</top>
                 <width>412</width>
                 <height>21</height>
                 <info>PVR.ActStreamProgrSignal</info>
@@ -766,7 +992,7 @@
             <control type="label">
                 <description>Signal value</description>
                 <left>818</left>
-                <top>174</top>
+                <top>398</top>
                 <width>270</width>
                 <height>38</height>
                 <label>$INFO[PVR.ActStreamSignal]</label>
@@ -777,8 +1003,8 @@
             </control>
             <control type="label">
                 <description>SNR</description>
-                <left>75</left>
-                <top>210</top>
+                <left>55</left>
+                <top>435</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19009]:</label>
@@ -789,8 +1015,8 @@
             </control>
             <control type="progress">
                 <description>Progressbar</description>
-                <left>330</left>
-                <top>220</top>
+                <left>310</left>
+                <top>445</top>
                 <width>412</width>
                 <height>21</height>
                 <overlaytexture></overlaytexture>
@@ -799,7 +1025,7 @@
             <control type="label">
                 <description>SNR value</description>
                 <left>818</left>
-                <top>210</top>
+                <top>435</top>
                 <width>270</width>
                 <height>38</height>
                 <label>$INFO[PVR.ActStreamSNR]</label>
@@ -810,8 +1036,8 @@
             </control>
             <control type="label">
                 <description>BER</description>
-                <left>75</left>
-                <top>248</top>
+                <left>55</left>
+                <top>288</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19010]:</label>
@@ -822,8 +1048,8 @@
             </control>
             <control type="label">
                 <description>BER value</description>
-                <left>330</left>
-                <top>248</top>
+                <left>310</left>
+                <top>288</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -835,8 +1061,8 @@
             </control>
             <control type="label">
                 <description>UNC</description>
-                <left>75</left>
-                <top>285</top>
+                <left>55</left>
+                <top>326</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19011]:</label>
@@ -847,8 +1073,8 @@
             </control>
             <control type="label">
                 <description>UNC value</description>
-                <left>330</left>
-                <top>285</top>
+                <left>310</left>
+                <top>326</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -860,8 +1086,8 @@
             </control>
             <control type="label">
                 <description>Service</description>
-                <left>75</left>
-                <top>322</top>
+                <left>55</left>
+                <top>136</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19099]:</label>
@@ -872,8 +1098,8 @@
             </control>
             <control type="label">
                 <description>Service value</description>
-                <left>330</left>
-                <top>322</top>
+                <left>310</left>
+                <top>136</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -885,8 +1111,8 @@
             </control>
             <control type="label">
                 <description>Encryption</description>
-                <left>75</left>
-                <top>360</top>
+                <left>55</left>
+                <top>212</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19015]:</label>
@@ -895,10 +1121,13 @@
                 <font>font12</font>
                 <textcolor>$VAR[MainColorOne]</textcolor>
             </control>
+
+
+<!-- original label for encryption channel
             <control type="label">
                 <description>Encryption value</description>
-                <left>330</left>
-                <top>360</top>
+                <left>310</left>
+                <top>212</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -908,10 +1137,30 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
             </control>
+-->
+
+<!-- new label based on evaluation made in IncludesVariables.xml -->
+            <control type="label">
+                <description>Encryption value</description>
+                <left>310</left>
+                <top>212</top>
+                <width>675</width>
+                <height>38</height>
+                <scroll>true</scroll>
+                <label>$VAR[PVR_Encryption_Status]</label>
+                <align>left</align>
+                <aligny>center</aligny>
+                <font>font12</font>
+                <textcolor>white</textcolor>
+            </control>
+
+
+
+
             <control type="label">
                 <description>Provider</description>
-                <left>75</left>
-                <top>398</top>
+                <left>55</left>
+                <top>174</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19101]:</label>
@@ -922,8 +1171,8 @@
             </control>
             <control type="label">
                 <description>Provider value</description>
-                <left>330</left>
-                <top>398</top>
+                <left>310</left>
+                <top>174</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -935,8 +1184,8 @@
             </control>
             <control type="label">
                 <description>Mux</description>
-                <left>75</left>
-                <top>435</top>
+                <left>55</left>
+                <top>250</top>
                 <width>248</width>
                 <height>38</height>
                 <label>$LOCALIZE[19100]:</label>
@@ -947,8 +1196,8 @@
             </control>
             <control type="label">
                 <description>Mux value</description>
-                <left>330</left>
-                <top>435</top>
+                <left>310</left>
+                <top>250</top>
                 <width>675</width>
                 <height>38</height>
                 <scroll>true</scroll>
@@ -958,7 +1207,7 @@
                 <font>font12</font>
                 <textcolor>white</textcolor>
             </control>
-        </control>
+       </control>
     </controls>
 </window>
 
