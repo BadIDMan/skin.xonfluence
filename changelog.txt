@@ -1,5 +1,6 @@
 [B]6.0.2[/B]
 - Add Rating and Votes to almost all Episodes and Movies views
+- DialogPlayerProcessInfo.xml refactored to proper display PVR info
 
 [B]6.0.1[/B]
 - Fix skin string IDs to comply with Kodi 22 (31000–31999) and resolve missing labels (this fixes multiple missing/blank labels in the skin settings)
