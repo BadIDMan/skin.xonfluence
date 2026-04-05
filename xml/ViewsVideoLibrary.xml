@@ -1149,7 +1149,37 @@
                         <scrollout>false</scrollout>
                         <pauseatend>1000</pauseatend>
                     </control>
-                </control>    
+
+
+
+                    <control type="label">
+                        <description>TVShow status txt</description>
+                        <left>320</left>
+                        <top>292</top>
+                        <width>210</width>
+                        <height>38</height>
+                        <label>$LOCALIZE[126]:</label>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <textcolor>$VAR[MainColorOne]</textcolor>
+                    </control>
+                    <control type="fadelabel">
+                        <description>TVShow status Value</description>
+                        <left>545</left>
+                        <top>292</top>
+                        <width>300</width>
+                        <height>38</height>
+                        <label fallback="32016">$INFO[listitem.Status]</label>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <font>font12</font>
+                        <scrollout>false</scrollout>
+                        <pauseatend>1000</pauseatend>
+                    </control>
+
+
+                </control>
                 <control type="image">
                     <left>0</left>
                     <top>340</top>
