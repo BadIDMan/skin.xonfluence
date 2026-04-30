@@ -86,27 +86,27 @@ msgstr "Uplynulý čas"
 
 msgctxt "#31017"
 msgid "Info button"
-msgstr ""
+msgstr "Tlačítko Info"
 
 msgctxt "#31018"
 msgid "Last video played"
-msgstr ""
+msgstr "Naposledy přehráno"
 
 msgctxt "#31019"
 msgid "Eject or load DVD drive"
-msgstr ""
+msgstr "Vysunout/načíst mechaniku"
 
 msgctxt "#31020"
 msgid "Automatic suggestion"
-msgstr ""
+msgstr "Automatický návrh"
 
 msgctxt "#31021"
 msgid "Enable trailers button"
-msgstr ""
+msgstr "Povolit tlačítko upoutávek"
 
 msgctxt "#31022"
 msgid "Enable playlist at startup"
-msgstr ""
+msgstr "Pustit playlist při startu"
 
 msgctxt "#31023"
 msgid "Playing"
@@ -138,7 +138,7 @@ msgstr "Fanouškovské umění"
 
 msgctxt "#31030"
 msgid "Full wall"
-msgstr ""
+msgstr "Plná stěna"
 
 msgctxt "#31031"
 msgid "Pic thumbs"
@@ -154,23 +154,23 @@ msgstr "Informace"
 
 msgctxt "#31034"
 msgid "Enable media info on fullscreen playback"
-msgstr ""
+msgstr "Povolit info o médiu při celoobrazovkovém přehrávání"
 
 msgctxt "#31035"
 msgid "Use extra thumbs"
-msgstr ""
+msgstr "Použít extra náhledy"
 
 msgctxt "#31036"
 msgid "Please set path to UPnP server"
-msgstr ""
+msgstr "Nastavte prosím cestu k UPnP serveru"
 
 msgctxt "#31037"
 msgid "Image only minimum popup seekbar"
-msgstr ""
+msgstr "Pouze obrázek v minimalistické liště vyhledávání"
 
 msgctxt "#31038"
 msgid "Select item to swap"
-msgstr ""
+msgstr "Vyberte položku k výměně"
 
 msgctxt "#31039"
 msgid "Actions"
@@ -182,7 +182,7 @@ msgstr "Nyní je přehráváno"
 
 msgctxt "#31041"
 msgid "UPnP error"
-msgstr ""
+msgstr "Chyba UPnP"
 
 msgctxt "#31042"
 msgid "PLAYING"
@@ -206,7 +206,7 @@ msgstr "VYHLEDÁVÁNÍ"
 
 msgctxt "#31047"
 msgid "PLAY SPEED"
-msgstr ""
+msgstr "RYCHLOST PŘEHRÁVÁNÍ"
 
 msgctxt "#31048"
 msgid "Visualisation presets"
@@ -226,15 +226,15 @@ msgstr "Řazení: sestupně"
 
 msgctxt "#31052"
 msgid "New banners"
-msgstr ""
+msgstr "Nové bannery"
 
 msgctxt "#31053"
 msgid "Watched banners"
-msgstr ""
+msgstr "Zhlédnuté bannery"
 
 msgctxt "#31054"
 msgid "Special features"
-msgstr ""
+msgstr "Speciální funkce"
 
 msgctxt "#31055"
 msgid "Open playlist"
@@ -262,159 +262,159 @@ msgstr "Aktuálně vybráno"
 
 msgctxt "#31062"
 msgid "Episode backdrop"
-msgstr ""
+msgstr "Pozadí epizody"
 
 msgctxt "#31063"
 msgid "Show volume buttons"
-msgstr ""
+msgstr "Zobrazit tlačítka hlasitosti"
 
 msgctxt "#31064"
 msgid "Volume buttons small jump"
-msgstr ""
+msgstr "Malý skok tlačítek hlasitosti"
 
 msgctxt "#31065"
 msgid "Favourites button action"
-msgstr ""
+msgstr "Akce tlačítka oblíbených"
 
 msgctxt "#31066"
 msgid "Enable original confluence popup seek bar"
-msgstr ""
+msgstr "Povolit původní Confluence vyhledávací lištu"
 
 msgctxt "#31067"
 msgid "Enable CD wall as fallback background of playing albums"
-msgstr ""
+msgstr "Povolit CD stěnu jako náhradní pozadí přehrávaných alb"
 
 msgctxt "#31068"
 msgid "Enable fanart animation of playing media"
-msgstr ""
+msgstr "Povolit animaci fanartu u přehrávaných médií"
 
 msgctxt "#31069"
 msgid "Enable home floor"
-msgstr ""
+msgstr "Povolit podlahu domovské obrazovky"
 
 msgctxt "#31070"
 msgid "Enable list item background fanart"
-msgstr ""
+msgstr "Povolit fanart pozadí u položek seznamu"
 
 msgctxt "#31071"
 msgid "Enable now playing info"
-msgstr ""
+msgstr "Povolit info o právě přehrávaném"
 
 msgctxt "#31072"
 msgid "Home top left info area"
-msgstr ""
+msgstr "Informační oblast vlevo nahoře"
 
 msgctxt "#31073"
 msgid "Enable home stats bar"
-msgstr ""
+msgstr "Povolit stavovou lištu statistik"
 
 msgctxt "#31074"
 msgid "Enable large home widgets"
-msgstr ""
+msgstr "Povolit velké widgety na domovské stránce"
 
 msgctxt "#31075"
 msgid "Enable episode thumbnails"
-msgstr ""
+msgstr "Povolit náhledy epizod"
 
 msgctxt "#31076"
 msgid "Enable raindrop effect"
-msgstr ""
+msgstr "Povolit efekt dešťových kapek"
 
 msgctxt "#31077"
 msgid "Shutdown menu"
-msgstr ""
+msgstr "Nabídka vypnutí"
 
 msgctxt "#31078"
 msgid "Power button action"
-msgstr ""
+msgstr "Akce tlačítka napájení"
 
 msgctxt "#31079"
 msgid "Hide power button"
-msgstr ""
+msgstr "Skrýt tlačítko napájení"
 
 msgctxt "#31080"
 msgid "Floor button options"
-msgstr ""
+msgstr "Možnosti tlačítek na podlaze"
 
 msgctxt "#31081"
 msgid "Enable clock and date display"
-msgstr ""
+msgstr "Povolit zobrazení hodin a data"
 
 msgctxt "#31082"
 msgid " (if not master)"
-msgstr ""
+msgstr " (pokud není master)"
 
 msgctxt "#31083"
 msgid "Kodi icon"
-msgstr ""
+msgstr "Ikona Kodi"
 
 msgctxt "#31084"
 msgid "Enable kodi intro movie"
-msgstr ""
+msgstr "Povolit úvodní video Kodi"
 
 msgctxt "#31085"
 msgid "Shuffle on"
-msgstr ""
+msgstr "Náhodné zapnuto"
 
 msgctxt "#31086"
 msgid "Repeat all on"
-msgstr ""
+msgstr "Opakovat vše zapnuto"
 
 msgctxt "#31087"
 msgid "Repeat one on"
-msgstr ""
+msgstr "Opakovat jednu zapnuto"
 
 msgctxt "#31088"
 msgid "of"
-msgstr ""
+msgstr "z"
 
 msgctxt "#31089"
 msgid "Enable PVR recording info"
-msgstr ""
+msgstr "Povolit info o PVR nahrávání"
 
 msgctxt "#31090"
 msgid "Use wide banners"
-msgstr ""
+msgstr "Použít široké bannery"
 
 msgctxt "#31091"
 msgid "Wake on lan ping"
-msgstr ""
+msgstr "Ping pro Wake on LAN"
 
 msgctxt "#31092"
 msgid "FF:FF:FF:FF:FF:FF "
-msgstr ""
+msgstr "FF:FF:FF:FF:FF:FF "
 
 msgctxt "#31093"
 msgid "Ping MAC address"
-msgstr ""
+msgstr "Ping na MAC adresu"
 
 msgctxt "#31094"
 msgid "Enable WOL ping"
-msgstr ""
+msgstr "Povolit WOL ping"
 
 msgctxt "#31095"
 msgid "WOL ping timer"
-msgstr ""
+msgstr "Časovač WOL pingu"
 
 msgctxt "#31096"
 msgid "Enable suggested movies or TV shows info"
-msgstr ""
+msgstr "Povolit info o navrhovaných filmech a seriálech"
 
 msgctxt "#31097"
 msgid "Enable Floor Return Buttons (for touch)"
-msgstr ""
+msgstr "Povolit tlačítka zpět na podlaze (pro dotyk)"
 
 msgctxt "#31098"
 msgid "Top left widget on all screens"
-msgstr ""
+msgstr "Widget vlevo nahoře na všech obrazovkách"
 
 msgctxt "#31099"
 msgid "Use extra fanart on navigation"
-msgstr ""
+msgstr "Použít extra fanart při navigaci"
 
 msgctxt "#31100"
 msgid "Weather fanart"
-msgstr ""
+msgstr "Fanart počasí"
 
 msgctxt "#31101"
 msgid "Home screen options"
@@ -434,7 +434,7 @@ msgstr "Přehrávat upoutávky v okně [COLOR=grey3](Pouze dialogové okno infor
 
 msgctxt "#31105"
 msgid "Artwork"
-msgstr ""
+msgstr "Grafika"
 
 msgctxt "#31106"
 msgid "Miscellaneous options"
@@ -466,15 +466,15 @@ msgstr "Možnosti"
 
 msgctxt "#31113"
 msgid "Choices"
-msgstr ""
+msgstr "Volby"
 
 msgctxt "#31114"
 msgid "UPnP media"
-msgstr ""
+msgstr "UPnP média"
 
 msgctxt "#31115"
 msgid "UPnP"
-msgstr ""
+msgstr "UPnP"
 
 msgctxt "#31116"
 msgid "Show recently added albums"
@@ -498,7 +498,7 @@ msgstr "Podnabídka domovské stránky „Hry“"
 
 msgctxt "#31121"
 msgid "Show plot info on info screen"
-msgstr ""
+msgstr "Zobrazit děj na obrazovce informací"
 
 msgctxt "#31122"
 msgid "Hide EPG if RDS is present on channel window"
@@ -506,7 +506,7 @@ msgstr "Skrýt televizní program, pokud je v okně kanálu k dispozici RDS"
 
 msgctxt "#31123"
 msgid "Popup:"
-msgstr ""
+msgstr "Vyskakovací:"
 
 msgctxt "#31124"
 msgid "Show background \"Now playing\" video"
@@ -518,7 +518,7 @@ msgstr "Zobrazit právě přehrávanou vizualizaci na pozadí"
 
 msgctxt "#31127"
 msgid "TvTunes"
-msgstr ""
+msgstr "TvTunes"
 
 msgctxt "#31128"
 msgid "Lyrics"
@@ -530,11 +530,11 @@ msgstr "Skrýt fanart v celoobrazovkové vizualizaci"
 
 msgctxt "#31130"
 msgid "Hide favorites button"
-msgstr ""
+msgstr "Skrýt tlačítko oblíbených"
 
 msgctxt "#31131"
 msgid "Hide top left info on windows"
-msgstr ""
+msgstr "Skrýt info vlevo nahoře v oknech"
 
 msgctxt "#31132"
 msgid "Lyrics add-on"
@@ -542,7 +542,7 @@ msgstr "Doplněk textů"
 
 msgctxt "#31133"
 msgid "Minimize on exit button"
-msgstr ""
+msgstr "Minimalizovat při tlačítku ukončení"
 
 msgctxt "#31134"
 msgid "Home page \"Videos\" submenu"
@@ -558,15 +558,15 @@ msgstr "Podnabídka domovské stránky „Obrázky“"
 
 msgctxt "#31137"
 msgid "Enable low main menu bar"
-msgstr ""
+msgstr "Povolit nízkou lištu hlavního menu"
 
 msgctxt "#31138"
 msgid "Play party mode music on screensaver"
-msgstr ""
+msgstr "Při spořiči hrát hudbu v party módu"
 
 msgctxt "#31139"
 msgid "Enable automatic fullscreen music playback"
-msgstr ""
+msgstr "Povolit automatické celoobrazovkové přehrávání hudby"
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -574,7 +574,7 @@ msgstr "OSD hudby"
 
 msgctxt "#31141"
 msgid "Hide page count info"
-msgstr ""
+msgstr "Skrýt počet stránek"
 
 msgctxt "#31142"
 msgid "Settings level"
@@ -582,151 +582,151 @@ msgstr "Úrověň nastavení"
 
 msgctxt "#31143"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31144"
 msgid "Windows home server"
-msgstr ""
+msgstr "Windows Home Server"
 
 msgctxt "#31145"
 msgid "Plex"
-msgstr ""
+msgstr "Plex"
 
 msgctxt "#31146"
 msgid "Enable busy animation"
-msgstr ""
+msgstr "Povolit animaci vytížení"
 
 msgctxt "#31147"
 msgid "Setup UPnP library"
-msgstr ""
+msgstr "Nastavit UPnP knihovnu"
 
 msgctxt "#31148"
 msgid "Enable UPnP client mode"
-msgstr ""
+msgstr "Povolit režim UPnP klienta"
 
 msgctxt "#31149"
 msgid "UPnP server type"
-msgstr ""
+msgstr "Typ UPnP serveru"
 
 msgctxt "#31150"
 msgid "Select UPnP server"
-msgstr ""
+msgstr "Vybrat UPnP server"
 
 msgctxt "#31151"
 msgid "Restart kodi instead of system reboot"
-msgstr ""
+msgstr "Restartovat Kodi místo celého systému"
 
 msgctxt "#31152"
 msgid "Enable kiosk mode"
-msgstr ""
+msgstr "Povolit režim Kiosek"
 
 msgctxt "#31153"
 msgid "Show minimal picture info"
-msgstr ""
+msgstr "Zobrazit minimální info o obrázku"
 
 msgctxt "#31154"
 msgid "Notifications at top left"
-msgstr ""
+msgstr "Oznámení vlevo nahoře"
 
 msgctxt "#31155"
 msgid "Show global search button on bottom left"
-msgstr ""
+msgstr "Zobrazit globální hledání vlevo dole"
 
 msgctxt "#31156"
 msgid ":"
-msgstr ""
+msgstr ":"
 
 msgctxt "#31157"
 msgid "Enable manual opening of media views slide menu"
-msgstr ""
+msgstr "Povolit manuální otevírání bočního menu"
 
 msgctxt "#31158"
 msgid "Never"
-msgstr ""
+msgstr "Nikdy"
 
 msgctxt "#31159"
 msgid "Permanently"
-msgstr ""
+msgstr "Trvale"
 
 msgctxt "#31160"
 msgid "Visualisation settings"
-msgstr ""
+msgstr "Nastavení vizualizace"
 
 msgctxt "#31161"
 msgid "Lyrics add-on settings"
-msgstr ""
+msgstr "Nastavení doplňku textů"
 
 msgctxt "#31162"
 msgid " pack for "
-msgstr ""
+msgstr " balíček pro "
 
 msgctxt "#31163"
 msgid "Update all backgrounds"
-msgstr ""
+msgstr "Aktualizovat všechna pozadí"
 
 msgctxt "#31164"
 msgid "Flags"
-msgstr ""
+msgstr "Příznaky"
 
 msgctxt "#31165"
 msgid "Don't ask again"
-msgstr ""
+msgstr "Znovu se neptat"
 
 msgctxt "#31166"
 msgid "Setup default background"
-msgstr ""
+msgstr "Nastavit výchozí pozadí"
 
 msgctxt "#31167"
 msgid "No backgrounds set, install and setup default backgrounds add-on?"
-msgstr ""
+msgstr "Žádná pozadí nenastavena, nainstalovat doplněk výchozích pozadí?"
 
 msgctxt "#31188"
 msgid "Random concerts"
-msgstr ""
+msgstr "Náhodné koncerty"
 
 msgctxt "#31189"
 msgid "Recent concerts"
-msgstr ""
+msgstr "Nedávné koncerty"
 
 msgctxt "#31190"
 msgid "Random albums"
-msgstr ""
+msgstr "Náhodná alba"
 
 msgctxt "#31191"
 msgid "Suggested albums"
-msgstr ""
+msgstr "Navrhovaná alba"
 
 msgctxt "#31192"
 msgid "Recent albums"
-msgstr ""
+msgstr "Nedávná alba"
 
 msgctxt "#31193"
 msgid "Random episodes"
-msgstr ""
+msgstr "Náhodné epizody"
 
 msgctxt "#31194"
 msgid "Suggested episodes"
-msgstr ""
+msgstr "Navrhované epizody"
 
 msgctxt "#31195"
 msgid "Recent episodes"
-msgstr ""
+msgstr "Nedávné epizody"
 
 msgctxt "#31196"
 msgid "Random movies"
-msgstr ""
+msgstr "Náhodné filmy"
 
 msgctxt "#31197"
 msgid "Suggested movies"
-msgstr ""
+msgstr "Navrhované filmy"
 
 msgctxt "#31198"
 msgid "Recent movies"
-msgstr ""
+msgstr "Nedávné filmy"
 
 msgctxt "#31199"
 msgid "Suggested concerts"
-msgstr ""
+msgstr "Navrhované koncerty"
 
 msgctxt "#31200"
 msgid "Shortcuts"
@@ -734,11 +734,11 @@ msgstr "Zkratky"
 
 msgctxt "#31201"
 msgid "Custom widgets"
-msgstr ""
+msgstr "Vlastní widgety"
 
 msgctxt "#31202"
 msgid "Custom:"
-msgstr ""
+msgstr "Vlastní:"
 
 msgctxt "#31203"
 msgid "Choose your song"
@@ -746,7 +746,7 @@ msgstr "Vyberte svou skladbu"
 
 msgctxt "#31204"
 msgid "ExtendedInfo"
-msgstr ""
+msgstr "Rozšířené info"
 
 msgctxt "#31205"
 msgid "Lyrics source"
@@ -766,323 +766,323 @@ msgstr "Nadcházející epizody"
 
 msgctxt "#31209"
 msgid "Global search"
-msgstr ""
+msgstr "Globální hledání"
 
 msgctxt "#31210"
 msgid "Nodes"
-msgstr ""
+msgstr "Uzly"
 
 msgctxt "#31211"
 msgid "Node"
-msgstr ""
+msgstr "Uzel"
 
 msgctxt "#31212"
 msgid "Streaming media"
-msgstr ""
+msgstr "Streamovaná média"
 
 msgctxt "#31213"
 msgid "Streaming navigator"
-msgstr ""
+msgstr "Navigátor streamování"
 
 msgctxt "#31214"
 msgid "Show addon names"
-msgstr ""
+msgstr "Zobrazit názvy doplňků"
 
 msgctxt "#31215"
 msgid "Watch it later"
-msgstr ""
+msgstr "Zhlédnout později"
 
 msgctxt "#31216"
 msgid "Animation"
-msgstr ""
+msgstr "Animované"
 
 msgctxt "#31217"
 msgid "Children"
-msgstr ""
+msgstr "Pro děti"
 
 msgctxt "#31218"
 msgid "Comedy"
-msgstr ""
+msgstr "Komedie"
 
 msgctxt "#31219"
 msgid "Family"
-msgstr ""
+msgstr "Rodinné"
 
 msgctxt "#31220"
 msgid "In progress movies"
-msgstr ""
+msgstr "Rozkoukané filmy"
 
 msgctxt "#31221"
 msgid "Monte carlo"
-msgstr ""
+msgstr "Monte Carlo"
 
 msgctxt "#31222"
 msgid "Virgin rock"
-msgstr ""
+msgstr "Virgin Rock"
 
 msgctxt "#31223"
 msgid "Movies animation"
-msgstr ""
+msgstr "Filmy: Animované"
 
 msgctxt "#31224"
 msgid "Movies children"
-msgstr ""
+msgstr "Filmy: Pro děti"
 
 msgctxt "#31225"
 msgid "Movies comedy"
-msgstr ""
+msgstr "Filmy: Komedie"
 
 msgctxt "#31226"
 msgid "Movies family"
-msgstr ""
+msgstr "Filmy: Rodinné"
 
 msgctxt "#31227"
 msgid "HD-movies"
-msgstr ""
+msgstr "HD filmy"
 
 msgctxt "#31228"
 msgid "Unwatched movies"
-msgstr ""
+msgstr "Nezhlédnuté filmy"
 
 msgctxt "#31230"
 msgid "User selection one"
-msgstr ""
+msgstr "Uživatelský výběr 1"
 
 msgctxt "#31231"
 msgid "User selection two"
-msgstr ""
+msgstr "Uživatelský výběr 2"
 
 msgctxt "#31232"
 msgid "User selection three"
-msgstr ""
+msgstr "Uživatelský výběr 3"
 
 msgctxt "#31233"
 msgid "User selection four"
-msgstr ""
+msgstr "Uživatelský výběr 4"
 
 msgctxt "#31234"
 msgid "User selection five"
-msgstr ""
+msgstr "Uživatelský výběr 5"
 
 msgctxt "#31235"
 msgid "User selection six"
-msgstr ""
+msgstr "Uživatelský výběr 6"
 
 msgctxt "#31236"
 msgid "User selection seven"
-msgstr ""
+msgstr "Uživatelský výběr 7"
 
 msgctxt "#31237"
 msgid "User selection eight"
-msgstr ""
+msgstr "Uživatelský výběr 8"
 
 msgctxt "#31238"
 msgid "User selection nine"
-msgstr ""
+msgstr "Uživatelský výběr 9"
 
 msgctxt "#31239"
 msgid "User selection ten"
-msgstr ""
+msgstr "Uživatelský výběr 10"
 
 msgctxt "#31240"
 msgid "User friendly name"
-msgstr ""
+msgstr "Srozumitelný název"
 
 msgctxt "#31241"
 msgid "User selection eleven"
-msgstr ""
+msgstr "Uživatelský výběr 11"
 
 msgctxt "#31242"
 msgid "User selection twelve"
-msgstr ""
+msgstr "Uživatelský výběr 12"
 
 msgctxt "#31243"
 msgid "Kodi command"
-msgstr ""
+msgstr "Kodi příkaz"
 
 msgctxt "#31244"
 msgid "Skin preset"
-msgstr ""
+msgstr "Předvolba vzhledu"
 
 msgctxt "#31245"
 msgid "Next aired episodes"
-msgstr ""
+msgstr "Další vysílané epizody"
 
 msgctxt "#31247"
 msgid "Move menu item"
-msgstr ""
+msgstr "Přesunout položku menu"
 
 msgctxt "#31248"
 msgid "% transparency"
-msgstr ""
+msgstr "% průhlednosti"
 
 msgctxt "#31249"
 msgid "Background transparency"
-msgstr ""
+msgstr "Průhlednost pozadí"
 
 msgctxt "#31251"
 msgid "Suggested"
-msgstr ""
+msgstr "Navrhované"
 
 msgctxt "#31252"
 msgid "No suggested media"
-msgstr ""
+msgstr "Žádná navrhovaná média"
 
 msgctxt "#31253"
 msgid "Recently added"
-msgstr ""
+msgstr "Nedávno přidané"
 
 msgctxt "#31254"
 msgid "None"
-msgstr ""
+msgstr "Žádné"
 
 msgctxt "#31255"
 msgid "Theme"
-msgstr ""
+msgstr "Motiv"
 
 msgctxt "#31256"
 msgid "Random fanArt"
-msgstr ""
+msgstr "Náhodný fanart"
 
 msgctxt "#31257"
 msgid "Skin default"
-msgstr ""
+msgstr "Výchozí vzhledu"
 
 msgctxt "#31258"
 msgid "User select"
-msgstr ""
+msgstr "Uživatelský výběr"
 
 msgctxt "#31260"
 msgid "No disc media detected"
-msgstr ""
+msgstr "Nenalezen žádný disk"
 
 msgctxt "#31261"
 msgid "Next tracks"
-msgstr ""
+msgstr "Další skladby"
 
 msgctxt "#31267"
 msgid "Playing"
-msgstr ""
+msgstr "Přehrává se"
 
 msgctxt "#31268"
 msgid "Played"
-msgstr ""
+msgstr "Přehráno"
 
 msgctxt "#31269"
 msgid "Unfinished"
-msgstr ""
+msgstr "Nedokončeno"
 
 msgctxt "#31270"
 msgid "Ubuntu Normal"
-msgstr ""
+msgstr "Ubuntu Normal"
 
 msgctxt "#31271"
 msgid "Ubuntu Bold"
-msgstr ""
+msgstr "Ubuntu Bold"
 
 msgctxt "#31272"
 msgid "Enable holiday theme"
-msgstr ""
+msgstr "Povolit sváteční motiv"
 
 msgctxt "#31273"
 msgid "Enable wrap around menu"
-msgstr ""
+msgstr "Povolit nekonečné procházení menu"
 
 msgctxt "#31274"
 msgid "Enable return to start menu scroll"
-msgstr ""
+msgstr "Povolit návrat na začátek posuvem"
 
 msgctxt "#31275"
 msgid "Enable visible horizontal submenu"
-msgstr ""
+msgstr "Povolit viditelné horizontální podmenu"
 
 msgctxt "#31276"
 msgid "Extra artwork options"
-msgstr ""
+msgstr "Možnosti extra grafiky"
 
 msgctxt "#31277"
 msgid "Enable music visualization on home screen"
-msgstr ""
+msgstr "Povolit vizualizaci hudby na domovské obrazovce"
 
 msgctxt "#31278"
 msgid "Enable CD case and disk art"
-msgstr ""
+msgstr "Povolit CD obaly a grafiku disků"
 
 msgctxt "#31279"
 msgid "Enable next 5 songs scroller"
-msgstr ""
+msgstr "Povolit seznam dalších 5 skladeb"
 
 msgctxt "#31280"
 msgid "Diffuse music visualization with artist fanart"
-msgstr ""
+msgstr "Prolnout vizualizaci s fanartem interpreta"
 
 msgctxt "#31281"
 msgid "Enable background playing media"
-msgstr ""
+msgstr "Povolit přehrávání média na pozadí"
 
 msgctxt "#31282"
 msgid "Home menu"
-msgstr ""
+msgstr "Domovské menu"
 
 msgctxt "#31283"
 msgid "Enable background video in PVR windows"
-msgstr ""
+msgstr "Povolit video na pozadí v PVR oknech"
 
 msgctxt "#31286"
 msgid "Remote"
-msgstr ""
+msgstr "Dálkové"
 
 msgctxt "#31287"
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 msgctxt "#31288"
 msgid "Select icon"
-msgstr ""
+msgstr "Vybrat ikonu"
 
 msgctxt "#31289"
 msgid "Icon"
-msgstr ""
+msgstr "Ikona"
 
 msgctxt "#31290"
 msgid "Menu item"
-msgstr ""
+msgstr "Položka menu"
 
 msgctxt "#31291"
 msgid "Submenu set"
-msgstr ""
+msgstr "Sada podmenu"
 
 msgctxt "#31292"
 msgid "Add-on set"
-msgstr ""
+msgstr "Sada doplňků"
 
 msgctxt "#31293"
 msgid "Widget set"
-msgstr ""
+msgstr "Sada widgetů"
 
 msgctxt "#31294"
 msgid "Background type"
-msgstr ""
+msgstr "Typ pozadí"
 
 msgctxt "#31295"
 msgid "Live content"
-msgstr ""
+msgstr "Živý obsah"
 
 msgctxt "#31296"
 msgid "Movie fanart"
-msgstr ""
+msgstr "Fanart filmů"
 
 msgctxt "#31297"
 msgid "TVShow fanart"
-msgstr ""
+msgstr "Fanart seriálů"
 
 msgctxt "#31298"
 msgid "Concerts fanart"
-msgstr ""
+msgstr "Fanart koncertů"
 
 msgctxt "#31299"
 msgid "Artists fanart"
-msgstr ""
+msgstr "Fanart interpretů"
 
 msgctxt "#31300"
 msgid "Current temperature"
@@ -1094,7 +1094,7 @@ msgstr "Naposledy aktualizováno"
 
 msgctxt "#31302"
 msgid "Outlook - "
-msgstr ""
+msgstr "Předpověď - "
 
 msgctxt "#31303"
 msgid "Data provider"
@@ -1102,19 +1102,19 @@ msgstr "Poskytovatel dat"
 
 msgctxt "#31304"
 msgid "Supported addons and scripts"
-msgstr ""
+msgstr "Podporované doplňky a skripty"
 
 msgctxt "#31305"
 msgid "Initial defaults"
-msgstr ""
+msgstr "Počáteční výchozí"
 
 msgctxt "#31306"
 msgid "Reset"
-msgstr ""
+msgstr "Obnovit"
 
 msgctxt "#31307"
 msgid "Hide fanart"
-msgstr ""
+msgstr "Skrýt fanart"
 
 msgctxt "#31308"
 msgid "Movie details"
@@ -1130,19 +1130,19 @@ msgstr "Číslo stopy"
 
 msgctxt "#31315"
 msgid "Submenu item"
-msgstr ""
+msgstr "Položka podmenu"
 
 msgctxt "#31316"
 msgid "Select add-on set"
-msgstr ""
+msgstr "Vybrat sadu doplňků"
 
 msgctxt "#31317"
 msgid "Set fanart path"
-msgstr ""
+msgstr "Nastavit cestu k fanartům"
 
 msgctxt "#31318"
 msgid "Up one level"
-msgstr ""
+msgstr "O úroveň výš"
 
 msgctxt "#31319"
 msgid "Selected profile"
@@ -1154,7 +1154,7 @@ msgstr "Naposledy přihlášen"
 
 msgctxt "#31321"
 msgid "Library mode"
-msgstr ""
+msgstr "Režim knihovny"
 
 msgctxt "#31322"
 msgid "Aired"
@@ -1162,11 +1162,11 @@ msgstr "Vysíláno"
 
 msgctxt "#31323"
 msgid "Use banners"
-msgstr ""
+msgstr "Použít bannery"
 
 msgctxt "#31324"
 msgid "Hide logo"
-msgstr ""
+msgstr "Skrýt logo"
 
 msgctxt "#31325"
 msgid "Playlist options"
@@ -1198,59 +1198,59 @@ msgstr "Podrobnosti o albu"
 
 msgctxt "#31332"
 msgid "Alternate fanart"
-msgstr ""
+msgstr "Alternativní fanart"
 
 msgctxt "#31333"
 msgid "Log-in"
-msgstr ""
+msgstr "Přihlásit"
 
 msgctxt "#31334"
 msgid "Shutdown menu"
-msgstr ""
+msgstr "Nabídka vypnutí"
 
 msgctxt "#31335"
 msgid "Select submenu set"
-msgstr ""
+msgstr "Vybrat sadu podmenu"
 
 msgctxt "#31336"
 msgid "Select menu item"
-msgstr ""
+msgstr "Vybrat položku menu"
 
 msgctxt "#31337"
 msgid "Global skin options"
-msgstr ""
+msgstr "Globální nastavení vzhledu"
 
 msgctxt "#31338"
 msgid "Favourites window"
-msgstr ""
+msgstr "Okno oblíbených"
 
 msgctxt "#31339"
 msgid "User video OSD button user selection"
-msgstr ""
+msgstr "Uživatelský výběr tlačítka video OSD"
 
 msgctxt "#31340"
 msgid "Enable logo artwork for all media"
-msgstr ""
+msgstr "Povolit loga pro všechna média"
 
 msgctxt "#31341"
 msgid "Enable clearart and character art for movies and TV shows"
-msgstr ""
+msgstr "Povolit ClearArt a postavy pro filmy a seriály"
 
 msgctxt "#31342"
 msgid "Enable discart for all media"
-msgstr ""
+msgstr "Povolit grafiku disků pro všechna média"
 
 msgctxt "#31343"
 msgid "Download art"
-msgstr ""
+msgstr "Stáhnout grafiku"
 
 msgctxt "#31345"
 msgid "Show user video OSD button"
-msgstr ""
+msgstr "Zobrazit uživatelské OSD tlačítko"
 
 msgctxt "#31346"
 msgid "Up one level"
-msgstr ""
+msgstr "O úroveň výš"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -1278,7 +1278,7 @@ msgstr "Stáhnout titulky"
 
 msgctxt "#31359"
 msgid "User video OSD button"
-msgstr ""
+msgstr "Uživ. tlačítko video OSD"
 
 msgctxt "#31360"
 msgid "Watch as 2D"
@@ -1294,91 +1294,91 @@ msgstr "Povoleno"
 
 msgctxt "#31363"
 msgid "Global background"
-msgstr ""
+msgstr "Globální pozadí"
 
 msgctxt "#31364"
 msgid "Holiday theme"
-msgstr ""
+msgstr "Sváteční motiv"
 
 msgctxt "#31365"
 msgid "Select main font colour"
-msgstr ""
+msgstr "Vybrat barvu hlavního písma"
 
 msgctxt "#31366"
 msgid "Current theme"
-msgstr ""
+msgstr "Aktuální motiv"
 
 msgctxt "#31369"
 msgid "Select main OSD colour"
-msgstr ""
+msgstr "Vybrat hlavní barvu OSD"
 
 msgctxt "#31370"
 msgid "Instant"
-msgstr ""
+msgstr "Okamžitě"
 
 msgctxt "#31371"
 msgid "Delayed"
-msgstr ""
+msgstr "Zpožděno"
 
 msgctxt "#31372"
 msgid "Enable video OSD start playing introduction"
-msgstr ""
+msgstr "Povolit úvodní info při startu přehrávání"
 
 msgctxt "#31373"
 msgid "Enable video OSD plot on pause"
-msgstr ""
+msgstr "Povolit zobrazení děje při pozastavení"
 
 msgctxt "#31374"
 msgid "Enable video info and seekbar on pause"
-msgstr ""
+msgstr "Povolit info a lištu při pozastavení"
 
 msgctxt "#31375"
 msgid "Use graphical textures on keyboards"
-msgstr ""
+msgstr "Použít grafické textury na klávesnici"
 
 msgctxt "#31376"
 msgid "Use autocomplete on keyboards"
-msgstr ""
+msgstr "Použít automatické doplňování"
 
 msgctxt "#31377"
 msgid "Enable video info on OSD menu"
-msgstr ""
+msgstr "Povolit info o videu v OSD menu"
 
 msgctxt "#31380"
 msgid "Enable playlist widget script"
-msgstr ""
+msgstr "Povolit skript widgetu playlistu"
 
 msgctxt "#31381"
 msgid "Configure script.randomandlastitems"
-msgstr ""
+msgstr "Nastavit script.randomandlastitems"
 
 msgctxt "#31382"
 msgid "Playlist widget should [B]randomize[/B] the playlist sort order"
-msgstr ""
+msgstr "Widget playlistu má [B]náhodně[/B] řadit položky"
 
 msgctxt "#31383"
 msgid "Enable video artwork to show with OSD information"
-msgstr ""
+msgstr "Zobrazit grafiku videa s OSD informacemi"
 
 msgctxt "#31384"
 msgid "Enable music artwork to show with OSD information"
-msgstr ""
+msgstr "Zobrazit grafiku hudby s OSD informacemi"
 
 msgctxt "#31385"
 msgid "Hide text label in wide icon view"
-msgstr ""
+msgstr "Skrýt textové popisky v zobrazení širokých ikon"
 
 msgctxt "#31386"
 msgid "Music OSD settings"
-msgstr ""
+msgstr "Nastavení hudebního OSD"
 
 msgctxt "#31387"
 msgid "Video OSD settings"
-msgstr ""
+msgstr "Nastavení video OSD"
 
 msgctxt "#31388"
 msgid "Media View settings"
-msgstr ""
+msgstr "Nastavení zobrazení médií"
 
 msgctxt "#31390"
 msgid "Skin default"
@@ -1394,35 +1394,35 @@ msgstr "Založeno na Arial"
 
 msgctxt "#31393"
 msgid "Massive"
-msgstr ""
+msgstr "Masivní"
 
 msgctxt "#31397"
 msgid "Enable TV show next aired"
-msgstr ""
+msgstr "Povolit info o příští epizodě seriálu"
 
 msgctxt "#31398"
 msgid "Configure script.tv.show.next.aired"
-msgstr ""
+msgstr "Nastavit script.tv.show.next.aired"
 
 msgctxt "#31400"
 msgid "OpenELEC OS"
-msgstr ""
+msgstr "OpenELEC OS"
 
 msgctxt "#31401"
 msgid "Raspberry OS"
-msgstr ""
+msgstr "Raspberry OS"
 
 msgctxt "#31402"
 msgid "Enable disk type media cases"
-msgstr ""
+msgstr "Povolit obaly podle typu disku"
 
 msgctxt "#31403"
 msgid "Enable single global background"
-msgstr ""
+msgstr "Používat jedno společné pozadí"
 
 msgctxt "#31404"
 msgid "Default focused menu item"
-msgstr ""
+msgstr "Výchozí vybraná položka menu"
 
 msgctxt "#31411"
 msgid "First run help..."
@@ -1454,19 +1454,19 @@ msgstr "Vyberte profil, který bude použit po spuštění, když je přihlašov
 
 msgctxt "#31424"
 msgid "TV Shows"
-msgstr ""
+msgstr "Seriály"
 
 msgctxt "#31425"
 msgid "Concerts"
-msgstr ""
+msgstr "Koncerty"
 
 msgctxt "#31427"
 msgid "Concerts"
-msgstr ""
+msgstr "Koncerty"
 
 msgctxt "#31429"
 msgid "Cinema"
-msgstr ""
+msgstr "Kino"
 
 msgctxt "#31430"
 msgid "[B]PLAYER SETTINGS[/B][CR][CR]Configure actions that can be used during playback · Configure how media content is played"
@@ -1498,147 +1498,147 @@ msgstr "[B]NASTAVENÍ ROZHRANÍ[/B][CR][CR]Konfigurujte vzhled · Konfigurujte r
 
 msgctxt "#31437"
 msgid "[B]CONFIGURE SKIN SETTINGS[/B][CR][CR]Setup the Xonfluence skin · Add and remove home menu items · Change skin backgrounds"
-msgstr ""
+msgstr "[B]KONFIGURACE VZHLEDU[/B][CR][CR]Nastavení vzhledu Xonfluence · Přidání a odebrání položek menu · Změna pozadí"
 
 msgctxt "#31440"
 msgid "Select widget set"
-msgstr ""
+msgstr "Vybrat sadu widgetů"
 
 msgctxt "#31441"
 msgid "Hide item"
-msgstr ""
+msgstr "Skrýt položku"
 
 msgctxt "#31442"
 msgid "Hidden"
-msgstr ""
+msgstr "Skryto"
 
 msgctxt "#31443"
 msgid "Selected"
-msgstr ""
+msgstr "Vybráno"
 
 msgctxt "#31444"
 msgid "Recently played"
-msgstr ""
+msgstr "Naposledy přehráno"
 
 msgctxt "#31445"
 msgid "Clean library"
-msgstr ""
+msgstr "Vyčistit knihovnu"
 
 msgctxt "#31450"
 msgid "Show suspend button"
-msgstr ""
+msgstr "Zobrazit tlačítko režimu spánku"
 
 msgctxt "#31451"
 msgid "Show hibernate button"
-msgstr ""
+msgstr "Zobrazit tlačítko hibernace"
 
 msgctxt "#31452"
 msgid "Show logoff button"
-msgstr ""
+msgstr "Zobrazit tlačítko odhlášení"
 
 msgctxt "#31453"
 msgid "Show mastermode button"
-msgstr ""
+msgstr "Zobrazit tlačítko Master módu"
 
 msgctxt "#31454"
 msgid "Show timer button"
-msgstr ""
+msgstr "Zobrazit tlačítko časovače"
 
 msgctxt "#31455"
 msgid "Custom shutdown scripts"
-msgstr ""
+msgstr "Vlastní skripty vypnutí"
 
 msgctxt "#31456"
 msgid "Enable custom shutdown script"
-msgstr ""
+msgstr "Povolit vlastní skript vypnutí"
 
 msgctxt "#31457"
 msgid "Custom shutdown script"
-msgstr ""
+msgstr "Vlastní skript vypnutí"
 
 msgctxt "#31458"
 msgid "Custom shutdown argument"
-msgstr ""
+msgstr "Argument vlastního vypnutí"
 
 msgctxt "#31459"
 msgid "Enable custom timer script"
-msgstr ""
+msgstr "Povolit vlastní skript časovače"
 
 msgctxt "#31460"
 msgid "Custom timer script"
-msgstr ""
+msgstr "Vlastní skript časovače"
 
 msgctxt "#31461"
 msgid "Custom timer argument"
-msgstr ""
+msgstr "Argument vlastního časovače"
 
 msgctxt "#31462"
 msgid "Enable custom hibernate script"
-msgstr ""
+msgstr "Povolit vlastní skript hibernace"
 
 msgctxt "#31463"
 msgid "Custom hibernate script"
-msgstr ""
+msgstr "Vlastní skript hibernace"
 
 msgctxt "#31464"
 msgid "Custom hibernate argument"
-msgstr ""
+msgstr "Argument vlastní hibernace"
 
 msgctxt "#31465"
 msgid "Enable custom suspend script"
-msgstr ""
+msgstr "Povolit vlastní skript spánku"
 
 msgctxt "#31466"
 msgid "Custom suspend script"
-msgstr ""
+msgstr "Vlastní skript spánku"
 
 msgctxt "#31467"
 msgid "Custom suspend argument"
-msgstr ""
+msgstr "Argument vlastního spánku"
 
 msgctxt "#31490"
 msgid "Radio 105"
-msgstr ""
+msgstr "Radio 105"
 
 msgctxt "#31491"
 msgid "Launcher"
-msgstr ""
+msgstr "Spouštěč"
 
 msgctxt "#31492"
 msgid "User data"
-msgstr ""
+msgstr "Uživatelská data"
 
 msgctxt "#31493"
 msgid "[COLOR=selected][B]Warning!![/B][/COLOR] - Reset skin values to initial install defaults"
-msgstr ""
+msgstr "[COLOR=selected][B]Varování!![/B][/COLOR] – Obnovit nastavení vzhledu na výchozí"
 
 msgctxt "#31494"
 msgid "Background path:"
-msgstr ""
+msgstr "Cesta k pozadí:"
 
 msgctxt "#31495"
 msgid "Startup"
-msgstr ""
+msgstr "Při spuštění"
 
 msgctxt "#31496"
 msgid "Single image"
-msgstr ""
+msgstr "Jeden obrázek"
 
 msgctxt "#31497"
 msgid "Multi image"
-msgstr ""
+msgstr "Více obrázků"
 
 msgctxt "#31498"
 msgid "No background"
-msgstr ""
+msgstr "Bez pozadí"
 
 msgctxt "#31499"
 msgid "Clear menu option"
-msgstr ""
+msgstr "Vymazat volbu menu"
 
 msgctxt "#31500"
 msgid "Aspect ratio"
-msgstr ""
+msgstr "Poměr stran"
 
 msgctxt "#31501"
 msgid "Scheduled time"
@@ -1678,63 +1678,63 @@ msgstr "Možnosti kanálů"
 
 msgctxt "#31648"
 msgid "Low List"
-msgstr ""
+msgstr "Nízký seznam"
 
 msgctxt "#31698"
 msgid "Media certification country"
-msgstr ""
+msgstr "Země certifikace médií"
 
 msgctxt "#31699"
 msgid "Extras"
-msgstr ""
+msgstr "Bonusy"
 
 msgctxt "#31700"
 msgid "United States"
-msgstr ""
+msgstr "USA"
 
 msgctxt "#31701"
 msgid "Great Britian"
-msgstr ""
+msgstr "Velká Británie"
 
 msgctxt "#31702"
 msgid "Germany"
-msgstr ""
+msgstr "Německo"
 
 msgctxt "#31703"
 msgid "Australia"
-msgstr ""
+msgstr "Austrálie"
 
 msgctxt "#31704"
 msgid "Japan"
-msgstr ""
+msgstr "Japonsko"
 
 msgctxt "#31705"
 msgid "Hong Kong"
-msgstr ""
+msgstr "Hong Kong"
 
 msgctxt "#31706"
 msgid "Brazil"
-msgstr ""
+msgstr "Brazílie"
 
 msgctxt "#31707"
 msgid "Denmark"
-msgstr ""
+msgstr "Dánsko"
 
 msgctxt "#31708"
 msgid "Canada"
-msgstr ""
+msgstr "Kanada"
 
 msgctxt "#31709"
 msgid "Ireland"
-msgstr ""
+msgstr "Irsko"
 
 msgctxt "#31710"
 msgid "Netherlands"
-msgstr ""
+msgstr "Nizozemsko"
 
 msgctxt "#31711"
 msgid "France"
-msgstr ""
+msgstr "Francie"
 
 msgctxt "#31901"
 msgid "36-hour forecast"
@@ -1766,123 +1766,123 @@ msgstr "Mapy"
 
 msgctxt "#31919"
 msgid "Music path"
-msgstr ""
+msgstr "Cesta k hudbě"
 
 msgctxt "#31920"
 msgid "Music physical folder"
-msgstr ""
+msgstr "Fyzická složka hudby"
 
 msgctxt "#31921"
 msgid "Centralized fanart directories"
-msgstr ""
+msgstr "Centralizované složky fanartů"
 
 msgctxt "#31922"
 msgid "Enable fanart script"
-msgstr ""
+msgstr "Povolit fanart skript"
 
 msgctxt "#31923"
 msgid "Disable PVR in view"
-msgstr ""
+msgstr "Zakázat PVR v zobrazení"
 
 msgctxt "#31924"
 msgid "Album thumbnails"
-msgstr ""
+msgstr "Náhledy alb"
 
 msgctxt "#31925"
 msgid "Enable tvtunes"
-msgstr ""
+msgstr "Povolit TvTunes"
 
 msgctxt "#31926"
 msgid "Configure script.tvtunes"
-msgstr ""
+msgstr "Nastavit script.tvtunes"
 
 msgctxt "#31928"
 msgid "Enable extra fanart"
-msgstr ""
+msgstr "Povolit extra fanart"
 
 msgctxt "#31929"
 msgid "Enable artist slideshow"
-msgstr ""
+msgstr "Povolit prezentaci interpretů"
 
 msgctxt "#31930"
 msgid "Configure addon.artistslideshow"
-msgstr ""
+msgstr "Nastavit addon.artistslideshow"
 
 msgctxt "#31931"
 msgid "Enable global search"
-msgstr ""
+msgstr "Povolit globální hledání"
 
 msgctxt "#31932"
 msgid "Configure addon.globalsearch"
-msgstr ""
+msgstr "Nastavit addon.globalsearch"
 
 msgctxt "#31933"
 msgid "Enable simple playlists (watch it later)"
-msgstr ""
+msgstr "Povolit jednoduché playlisty (zhlédnout později)"
 
 msgctxt "#31934"
 msgid "Configure script.simpleplaylists"
-msgstr ""
+msgstr "Nastavit script.simpleplaylists"
 
 msgctxt "#31935"
 msgid "Configure required scripts"
-msgstr ""
+msgstr "Nastavit vyžadované skripty"
 
 msgctxt "#31936"
 msgid "Configure service.skin.widgets"
-msgstr ""
+msgstr "Nastavit service.skin.widgets"
 
 msgctxt "#31937"
 msgid "Use alternative background folder"
-msgstr ""
+msgstr "Použít alternativní složku pozadí"
 
 msgctxt "#31938"
 msgid "Movie details"
-msgstr ""
+msgstr "Podrobnosti o filmu"
 
 msgctxt "#31939"
 msgid "Adjust fanart script cycle rate"
-msgstr ""
+msgstr "Upravit rychlost cyklu fanartů"
 
 msgctxt "#31940"
 msgid "Seconds"
-msgstr ""
+msgstr "Sekundy"
 
 msgctxt "#31941"
 msgid "Enable running artwork downloader automaticaly after updating library"
-msgstr ""
+msgstr "Automaticky stahovat grafiku po aktualizaci knihovny"
 
 msgctxt "#31942"
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 msgctxt "#31943"
 msgid "Use default confluence favourites window look and feel"
-msgstr ""
+msgstr "Použít výchozí vzhled okna oblíbených Confluence"
 
 msgctxt "#31944"
 msgid "Visible in Master mode only"
-msgstr ""
+msgstr "Viditelné pouze v Master módu"
 
 msgctxt "#31945"
 msgid "Reset paths to skin default"
-msgstr ""
+msgstr "Obnovit cesty na výchozí"
 
 msgctxt "#31946"
 msgid "Reset fanart to skin default"
-msgstr ""
+msgstr "Obnovit fanarty na výchozí"
 
 msgctxt "#31947"
 msgid "Button look and feel"
-msgstr ""
+msgstr "Vzhled tlačítek"
 
 msgctxt "#31948"
 msgid "Button layout look and feel"
-msgstr ""
+msgstr "Vzhled rozvržení tlačítek"
 
 msgctxt "#31949"
 msgid "OSD look and feel"
-msgstr ""
+msgstr "Vzhled OSD"
 
 msgctxt "#31950"
 msgid "WEATHER"
@@ -1946,140 +1946,140 @@ msgstr "Avatar profilu"
 
 msgctxt "#31965"
 msgid "Multi-image background time per image"
-msgstr ""
+msgstr "Doba zobrazení u střídání pozadí"
 
 msgctxt "#31966"
 msgid "Enable custom video info script"
-msgstr ""
+msgstr "Povolit vlastní skript info o videu"
 
 msgctxt "#31967"
 msgid "Custom video info script command"
-msgstr ""
+msgstr "Příkaz vlastního skriptu info o videu"
 
 msgctxt "#31968"
 msgid "Widget format"
-msgstr ""
+msgstr "Formát widgetu"
 
 msgctxt "#31969"
 msgid "Airs"
-msgstr ""
+msgstr "Vysílá se"
 
 msgctxt "#31970"
 msgid "Enable DVD cases"
-msgstr ""
+msgstr "Povolit DVD obaly"
 
 msgctxt "#31971"
 msgid "Wrap around lists on video fanart view"
-msgstr ""
+msgstr "Nekonečný seznam v zobrazení video fanartu"
 
 msgctxt "#31972"
 msgid "Enable shorter plot outline"
-msgstr ""
+msgstr "Povolit kratší shrnutí děje"
 
 msgctxt "#31973"
 msgid "DVD drive"
-msgstr ""
+msgstr "DVD mechanika"
 
 msgctxt "#31974"
 msgid "Show seconds on clock display"
-msgstr ""
+msgstr "Zobrazit sekundy v hodinách"
 
 msgctxt "#31975"
 msgid "Sideblade label size and location"
-msgstr ""
+msgstr "Velikost a umístění bočního štítku"
 
 msgctxt "#31976"
 msgid "Top"
-msgstr ""
+msgstr "Nahoře"
 
 msgctxt "#31977"
 msgid "Small label"
-msgstr ""
+msgstr "Malý štítek"
 
 msgctxt "#31978"
 msgid "Bottom"
-msgstr ""
+msgstr "Dole"
 
 msgctxt "#31979"
 msgid "Reload"
-msgstr ""
+msgstr "Znovu načíst"
 
 msgctxt "#31980"
 msgid "Save settings and reload Xonfluence"
-msgstr ""
+msgstr "Uložit nastavení a restartovat Xonfluence"
 
 msgctxt "#31981"
 msgid "Kodi intro movie path"
-msgstr ""
+msgstr "Cesta k úvodnímu videu Kodi"
 
 msgctxt "#31982"
 msgid "Custom widgets limit amount"
-msgstr ""
+msgstr "Limit počtu vlastních widgetů"
 
 msgctxt "#31983"
 msgid "Dialog look and feel"
-msgstr ""
+msgstr "Vzhled dialogových oken"
 
 msgctxt "#31984"
 msgid "Classic"
-msgstr ""
+msgstr "Klasický"
 
 msgctxt "#31985"
 msgid "Modern"
-msgstr ""
+msgstr "Moderní"
 
 msgctxt "#31986"
 msgid "Max"
-msgstr ""
+msgstr "Max"
 
 msgctxt "#31987"
 msgid "Menu look and feel"
-msgstr ""
+msgstr "Vzhled menu"
 
 msgctxt "#31988"
 msgid "Graphics"
-msgstr ""
+msgstr "Grafika"
 
 msgctxt "#31989"
 msgid "Graphics & focused text"
-msgstr ""
+msgstr "Grafika a vybraný text"
 
 msgctxt "#31990"
 msgid "Graphics & text"
-msgstr ""
+msgstr "Grafika a text"
 
 msgctxt "#31991"
 msgid "Item border size"
-msgstr ""
+msgstr "Velikost ohraničení položky"
 
 msgctxt "#31992"
 msgid "Small"
-msgstr ""
+msgstr "Malé"
 
 msgctxt "#31993"
 msgid "Medium"
-msgstr ""
+msgstr "Střední"
 
 msgctxt "#31994"
 msgid "Large"
-msgstr ""
+msgstr "Velké"
 
 msgctxt "#31995"
 msgid "Live weather"
-msgstr ""
+msgstr "Živé počasí"
 
 msgctxt "#31996"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Zkratky"
 
 msgctxt "#31997"
 msgid "Show clock on full screen video"
-msgstr ""
+msgstr "Zobrazit hodiny u videa přes celou obrazovku"
 
 msgctxt "#31998"
 msgid "Recently added"
-msgstr ""
+msgstr "Nedávno přidané"
 
 msgctxt "#31999"
 msgid "Resolution"
-msgstr ""
+msgstr "Rozlišení"
